@@ -1,0 +1,42 @@
+.cases {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 7.4vw;
+}
+
+.cases__title {
+  color: var(--color-dark-turquoise);
+  font-size: var(--font-size-h2);
+  font-family: var(--font-header);
+  margin-bottom: 2.7vw;
+}
+
+.cases__cases-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cases__list-element {
+
+}
+
+@media screen and (max-width: 480px) {
+  .cases {
+    width: 100%;
+    padding-bottom: 13vw;
+  }
+  .cases__cases-list {
+    display: grid;
+    gap: 4vw;
+    justify-content: center;
+  }
+  .cases__title {
+    margin-bottom: 4vw;
+  }
+}

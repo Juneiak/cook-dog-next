@@ -1,0 +1,123 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10.3125vw;
+  width: 100%;
+}
+
+.about__company-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  margin-bottom: 3.4375vw;
+  
+}
+
+.about__title {
+  color: var(--color-white);
+  margin: 0;
+  font-family: var(--font-header);
+  font-size: var(--font-size-h1);
+  margin-bottom: 1.5625vw;
+  text-align: center;
+}
+
+.about__subtitle {
+  color: var(--color-white);
+  font-family: var(--font-main);
+  font-size: 2.3vw;
+  margin-bottom: 3.75vw;
+  text-align: center;
+}
+
+.about__container {
+  max-width: 61%;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__about-title {
+  font-family: var(--font-header);;
+  color: var(--color-white);
+  margin-bottom: 1.0417vw;
+  font-size: var(--font-size-h2);
+}
+
+.about__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.3021vw;
+}
+
+.about__text {
+  font-family: var(--font-main);
+  font-size: var(--font-size-p);
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 0.15625vw;
+}
+
+.about__text_width_320 {
+  display: none;
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
+}
+
+.about__subtext {
+  font-family: var(--font-main);
+  font-size: var(--font-size-p);
+  color: var(--color-white);
+  text-align: center;
+}
+
+
+@media screen and (max-width: 480px) {
+  .about {
+    padding-bottom: 13vw;
+    width: 100%;
+  }
+  
+  .about__company-name {
+    width: 91%;
+    margin-bottom: 9vw;
+  }
+  
+  .about__title {
+    margin-bottom: 2.5vw;
+    text-align: center;
+  }
+  
+  .about__subtitle {
+    font-size: 5.4vw;
+    margin-bottom: 8vw;
+  }
+  
+  .about__container {
+    max-width: 100%;
+  }
+  
+  .about__about-title {
+    margin-bottom: 3vw;
+  }
+  
+  .about__text-container {
+    margin-bottom: 3vw;
+  }
+  
+  .about__text {
+    display: none;
+  }
+
+  .about__text_width_320 {
+    display: flex;
+    line-height: 1.5;
+    width: 110%;
+  }
+}

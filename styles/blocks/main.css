@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10.677vw 0 9vw;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    width: 90%;
+  }
+}

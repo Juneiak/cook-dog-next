@@ -1,0 +1,22 @@
+.framed-icon {
+  width: 10.9375vw;
+  height: 10.9375vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../public/images/icon-frame.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.framed-icon__icon {
+  width: 65%;
+  height: 65%;
+}
+
+@media screen and (max-width: 480px) {
+  .framed-icon {
+    width: 30vw;
+    height: 30vw;
+  }
+}
