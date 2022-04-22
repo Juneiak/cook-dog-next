@@ -1,6 +1,5 @@
 export default class Slider {
   constructor(ref) {
-    // console.log(ref)
     this.slider = ref
     this.list = this.slider.querySelector('.slider__list');
     this.initialListElements = Array.from(this.list.querySelectorAll('.slider__list-element'));

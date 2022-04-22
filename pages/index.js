@@ -1,13 +1,11 @@
 import SliderV from "../components/slider-v";
-import { useRef, useEffect, useState } from "react";
+
 
 export default function Home() {
 
-  const sliderContainer = useRef()
-  console.log(sliderContainer.current)
+
   return (
     <div className="page">
-      {sliderContainer.current && <SliderV ref={state} />}
       <div className="content">
 
         <main className="main">
@@ -43,7 +41,7 @@ export default function Home() {
                   </div>
                   <div className="card-about">
                     <h3 className="card-about__title">Маленький бизнес</h3>
-                    <p className="card-about__text">Ты только начал и мечтаешь выйти на уровень "Apple".</p>
+                    <p className="card-about__text">Ты только начал и мечтаешь выйти на уровень &quot;Apple&quot;.</p>
                   </div>
                 </article>
               </l1>
@@ -304,7 +302,7 @@ export default function Home() {
             <span className="team__subtitle">Это только часть команды!</span>
           </div>
           <div className="team__list">
-            <div ref={sliderContainer} className="slider">
+            <div className="slider">
               <ul className="slider__list">
                 <li className="slider__list-element">
                   <article className="small-card">
