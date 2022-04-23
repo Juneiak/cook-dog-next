@@ -1,4 +1,4 @@
-.framed-icon {
+.frame {
   width: 10.9375vw;
   height: 10.9375vw;
   display: flex;
@@ -9,13 +9,13 @@
   background-repeat: no-repeat;
 }
 
-.framed-icon__icon {
+.iconContainer {
   width: 65%;
   height: 65%;
 }
 
 @media screen and (max-width: 480px) {
-  .framed-icon {
+  .frame {
     width: 30vw;
     height: 30vw;
   }

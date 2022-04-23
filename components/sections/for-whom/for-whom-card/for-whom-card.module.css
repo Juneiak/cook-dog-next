@@ -1,0 +1,15 @@
+.card {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  gap: 1.56vw;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%;
+    gap: 2.5vw;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+  }
+}

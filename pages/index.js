@@ -1,299 +1,26 @@
-import SliderV from "../components/slider-v";
+import styles from '../styles/page-styles/index.module.css';
 
+import MainLayout from '../components/main-layout/main-layout'
+import About from '../components/sections/about/about';
+import ForWhom from '../components/sections/for-whom/for-whom';
+import WhatWeDo from '../components/sections/what-we-do/what-we-do';
+import BadWays from '../components/sections/bad-ways/bad-ways';
 
 export default function Home() {
 
-
   return (
-    <div className="page">
-      <div className="content">
+    <MainLayout>
+      <div className={styles.content}>
 
         <main className="main">
 
-          <section className="about">
-            <div className="about__company-name">
-              <h1 className="about__title">CookDog</h1>
-              <span className="about__subtitle">Собака. Повар. Агентство.</span>
-              <button name="leave-contact" type="button" className="button">Начать</button>
-            </div>
-            
-            <div className="about__container">
-              <h2 className="about__about-title">Кто мы такие?</h2>
-              <div className='about__text-container'>
-                <p className="about__text about__text_width_320">Мы - маркетинговое агентство Cookdog. Готовим сочный контент и прогреваем ваши продажи. В нашей команде 12 экспертов, которые знают и любят свое дело. Маркетологи, продукт-менеджеры, видеографы, копирайтеры, дизайнеры, smm-менеджеры, таргетологи, директологи, программисты.</p>
-                <p className="about__text">Мы - маркетинговое агентство Cookdog.</p>
-                <p className="about__text">Готовим сочный контент и прогреваем ваши продажи.</p>
-                <p className="about__text">В нашей команде 12 экспертов, которые знают и любят свое дело.</p>
-                <p className="about__text">Маркетологи, продукт-менеджеры, видеографы, копирайтеры, дизайнеры, smm-менеджеры, таргетологи, директологи, программисты.</p>
-              </div>
-              <p className="about__subtext">Мы умеем делать из обычного бизнеса офигенный.</p>
-            </div>
-          </section>
+          <About />
 
-          <section className="for-whom">
-            <h2 className="for-whom__title">Если у тебя:</h2>
-            <ul className="for-whom__list">
-      
-              <l1 className="for-whom__list-element">
-                <article className="for-whom__card">
-                  <div className="framed-icon">
-                    <img src="/images/icons/icon1.png" alt="иконка домик" className="framed-icon__icon"></img>
-                  </div>
-                  <div className="card-about">
-                    <h3 className="card-about__title">Маленький бизнес</h3>
-                    <p className="card-about__text">Ты только начал и мечтаешь выйти на уровень &quot;Apple&quot;.</p>
-                  </div>
-                </article>
-              </l1>
-
-              <l1 className="for-whom__list-element">
-                <article className="for-whom__card">
-                  <div className="framed-icon">
-                    <img src="/images/icons/icon2.png" alt="иконка бизнес центр" className="framed-icon__icon"></img>
-                  </div>
-                  <div className="card-about">
-                    <h3 className="card-about__title">Средний бизнес</h3>
-                    <p className="card-about__text">Свой бизнес поставлен на поток, ты в поиске решений по дальнейшему развитию бренда.</p>
-                  </div>
-                </article>
-              </l1>
-
-              <l1 className="for-whom__list-element">
-                <article className="for-whom__card">
-                  <div className="framed-icon">
-                    <img src="/images/icons/icon3.png" alt="иконка завод" className="framed-icon__icon"></img>
-                  </div>
-                  <div className="card-about">
-                    <h3 className="card-about__title">Собственное производство</h3>
-                    <p className="card-about__text">Ты хочешь заявить о себе и выйти на мировой уровень.</p>
-                  </div>
-                </article>
-              </l1>
-      
-            </ul>
-            <div className="for-whom__button">
-              <button name="leave-contact" type="button" className="button">Пора к нам!</button>
-            </div>
-          </section>
-
-          <section className="what-we-do">
-            <h2 className="what-we-do__title">Что мы сделаем:</h2>
-            <ul className="what-we-do__list">
-              <li className="what-we-do__list-element">
-                <article className="what-we-do__card">
-                  <div className="framed-icon">
-                    <img src="/images/icons/icon4.png" alt="иконка завод" className="framed-icon__icon"></img>
-                  </div>
-                  <div className="card-about card-about_align_start">
-                    <h3 className="card-about__title">Проведем комплексный анализ</h3>
-                    <p className="card-about__text">Найдем твою целевую аудиторию и самых опасных конкурентов</p>
-                  </div>
-                </article>
-              </li>
-
-              <li className="what-we-do__list-element">
-                <article className="what-we-do__card">
-                  <div className="framed-icon">
-                    <img src="/images/icons/icon5.png" alt="иконка завод" className="framed-icon__icon"></img>
-                  </div>
-                  <div className="card-about card-about_align_start">
-                    <h3 className="card-about__title">Настроим таргет и контекст</h3>
-                    <p className="card-about__text">Не пальцем в небо, а четко в твою ЦА. Привлечем клиентов по минимальной цене</p>
-                  </div>
-                </article>
-              </li>
-
-              <li className="what-we-do__list-element">
-                <article className="what-we-do__card">
-                  <div className="framed-icon">
-                    <img src="/images/icons/icon6.png" alt="иконка завод" className="framed-icon__icon"></img>
-                  </div>
-                  <div className="card-about card-about_align_start">
-                    <h3 className="card-about__title">Создадим персональную стратегию</h3>
-                    <p className="card-about__text">Проведем анализ ниши и продукта. Подготовим план для успешного запуска. Ты будешь расти своим собственным путем</p>
-                  </div>
-                </article>
-              </li>
-
-              <li className="what-we-do__list-element">
-                <article className="what-we-do__card">
-                  <div className="framed-icon">
-                    <img src="/images/icons/icon7.png" alt="иконка завод" className="framed-icon__icon"></img>
-                  </div>
-                  <div className="card-about card-about_align_start">
-                    <h3 className="card-about__title">Подготовим контент для твоего бизнеса</h3>
-                    <p className="card-about__text">Снимем крутые видеоролики, нарисуем красивые картинки и напишем запоминающиеся тексты. За тобой будут повторять все конкуренты!</p>
-                  </div>
-                </article>
-              </li>
-
-              <li className="what-we-do__list-element what-we-do__list-element_position_center">
-                <article className="what-we-do__card">
-                  <div className="framed-icon">
-                  <img src="/images/icons/icon8.png" alt="иконка лайка" className="framed-icon__icon"></img>
-                  </div>
-                  <div className="card-about card-about_align_start">
-                    <h3 className="card-about__title">Комплексное продвижение на любой платформе</h3>
-                    <p className="card-about__text">Разовьем аккаунт с нуля. Привлечем целевых подписчиков</p>
-                  </div>
-                </article>
-              </li>
-
-            </ul>
-          </section>
-
-          <section className="bad-ways">
-            <div className="bad-ways__about">
-              <h2 className="bad-ways__title">Твоя личная команда маркетинга на удаленке</h2>
-              <span className="bad-ways__subtitle">Давай разберем как обычно делают бизнесмены и почему так делать не стоит:</span>
-            </div>
-            <ul className="bad-ways__card-list">
-              <li className="bad-ways__list-element">
-                <article className="big-card">
-                  <div className="big-card__shadow"></div>
-                  <div className="big-card__content">
-                    <h3 className="big-card__title">НОБРАТЬ ОТДЕЛ МАРКЕТИНГА В ШТАТ</h3>
-                    <img src="/images/icons/icon9.png" alt="иконка спецов" className="big-card__icon" />
-                    <ul className="big-card__cons-list">
-                      <li className="big-card__con">
-                        <p className="big-card__con-text">Спецы стоят очень дорого</p>
-                        <ul className="big-card__con-subtext-list">
-                          <li>
-                            <p className="big-card__con-subtext">– Их очень мало</p>
-                          </li>
-                          <li>
-                            <p className="big-card__con-subtext">– Нужен большой штат (дизайнеры,копирайтеры,СММ и пр.)</p>
-                          </li>
-                        </ul>
-                      </li>
-    
-                      <li className="big-card__con">
-                        <p className="big-card__con-text">Вряд-ли ты знаешь что хорошо, а что плохо и умеешь руководить творческим коллективом</p>
-                      </li>
-    
-                      <li className="big-card__con">
-                        <p className="big-card__con-text">Куча затрат на:</p>
-                        <ul className="big-card__con-subtext-list">
-                          <li>
-                            <p className="big-card__con-subtext">– Дорогое профессиональное оборудование (камеры,свет и тд.)</p>
-                          </li>
-                          <li>
-                            <p className="big-card__con-subtext">– Аренда офиса</p>
-                          </li>
-                          <li>
-                            <p className="big-card__con-subtext">– Покупка компьютерной техники</p>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-    
-                    <p className="big-card__total">Итог: Много затрат, нервов и результат только через полгода.</p>
-                  </div>
-                </article>
-              </li>
-
-              <li className="bad-ways__list-element">
-                <article className="big-card">
-                  <div className="big-card__shadow"></div>
-                  <div className="big-card__content">
-                    <h3 className="big-card__title">ВЕСТИ МАРКЕТИНГ САМОМУ ИЛИ ПОПРОСИТЬ ЖЕНУ/ПОДРГУ</h3>
-                    <img src="/images/icons/icon10.png" alt="иконка спецов" className="big-card__icon" />
-                    <ul className="big-card__cons-list">
-                      <li className="big-card__con">
-                        <p className="big-card__con-text">Привет, расфокус внимания</p>
-                        <ul className="big-card__con-subtext-list">
-                          <li>
-                            <p className="big-card__con-subtext">– Нужно придумать стратегию</p>
-                          </li>
-                          <li>
-                            <p className="big-card__con-subtext">– – Арендовать студию</p>
-                          </li>
-                          <li>
-                            <p className="big-card__con-subtext">– Оплатить счета</p>
-                          </li>
-                          <li>
-                            <p className="big-card__con-subtext">– Обработать контент</p>
-                          </li>
-                          <li>
-                            <p className="big-card__con-subtext">– Написать и выложить пост</p>
-                          </li>
-                        </ul>
-                      </li>
-    
-                      <li className="big-card__con">
-                        <p className="big-card__con-text">Весь маркетинг завязан на одном человеке</p>
-                        <ul className="big-card__con-subtext-list">
-                          <li>
-                            <p className="big-card__con-subtext">– Вдруг не хватит времени на все?</p>
-                          </li>
-                          <li>
-                            <p className="big-card__con-subtext">– Нет желания</p>
-                          </li>
-                          <li>
-                            <p className="big-card__con-subtext">– Непрофессиональный контент</p>
-                          </li>
-                          <li>
-                            <p className="big-card__con-subtext">– Не видишь свой продукт со стороны</p>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-
-                    <p className="big-card__total">Итог: Контент на авось, эмоциональное выгорание, ссоры с женой\подругой и 0 результата.</p>
-                  </div>
-                </article>
-              </li>
-
-              <li className="bad-ways__list-element">
-                <article className="big-card">
-                  <div className="big-card__shadow"></div>
-                  <div className="big-card__content">
-                    <h3 className="big-card__title">НАЙТИ ТОЛПУ ФРИЛАНСЕРОВ НА КАЖДОЕ ЗАНЯТИЕ</h3>
-                    <img src="/images/icons/icon11.png" alt="иконка спецов" className="big-card__icon" />
-                    <ul className="big-card__cons-list">
-                      <li className="big-card__con">
-                        <p className="big-card__con-text">Сложно найти общий язык</p>
-                        <ul className="big-card__con-subtext-list">
-                          <li>
-                            <p className="big-card__con-subtext">– Увы, но иногда кидают на деньги и нарушают сроки </p>
-                          </li>
-                          <li>
-                            <p className="big-card__con-subtext">– Не выходят на связь</p>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li className="big-card__con">
-                        <p className="big-card__con-text">Нет слаженной командной работы</p>
-                        <ul className="big-card__con-subtext-list">
-                          <li>
-                            <p className="big-card__con-subtext">–...и общего понимания стратегии</p>
-                          </li>
-                          <li>
-                            <p className="big-card__con-subtext">– Не несут ответственности за результат</p>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li className="big-card__con">
-                        <p className="big-card__con-text">Используют непонятное оборудование</p>
-                      </li>
-
-                      <li className="big-card__con">
-                        <p className="big-card__con-text">Называют неоправданные цены</p>
-                      </li>
-                    </ul>
-
-                    <p className="big-card__total">Итог: У бренда есть более-менее контент,но он не вызывает доверия. Цена - ваши седые волосы.</p>
-                  </div>
-                </article>
-              </li>
-            </ul>
-
-            <div className="bad-ways__button">
-              <button name="leave-contact" type="button" className="button">Расслабиться</button>
-            </div>
-          </section>
+          <ForWhom />
+          
+          <WhatWeDo />
+          
+          <BadWays />
 
           <section className="team">
 
@@ -569,20 +296,6 @@ export default function Home() {
 
         </main>
 
-        <footer className="footer">
-          <div className="footer__content">
-            <span className="footer__author">CookDog Agency Design</span>
-            <span className="footer__number">+ 7 937 944 99 15</span>
-            <ul className="footer__contacts__list">
-              <li className="footer__contact-list-element">
-                <a href="https://vk.com/cookdog" target="blank" className="footer__link">
-                  <img src="/images/vk-icon.svg" alt="иконка вк" className="footer__link-icon" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </footer>
-
         <div id="pop-up" className="pop-up">
           <button type="button" id="pop-up-close-button" className="pop-up_close-button"></button>
           <div className="pop-up__content">
@@ -628,7 +341,7 @@ export default function Home() {
         </div>
         
       </div>
-    </div>
+    </MainLayout>
   )
 }
 

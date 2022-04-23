@@ -1,0 +1,88 @@
+.framed-gif {
+  width: 10.9375vw;
+  height: 10.9375vw;
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.framed-gif__icon {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.framed-gif__gif {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.framed-gif:hover .framed-gif__gif {
+  opacity: 1;
+}
+
+.framed-gif:hover .framed-gif__icon {
+  opacity: 0;
+}
+
+.framed-gif__icon_gif_1 {
+  width: 170%;
+  height: 170%;
+}
+
+.framed-gif__gif-gif_1 {
+  width: 170%;
+  height: 170%;
+}
+
+.framed-gif__icon_gif_2 {
+  width: 120%;
+  height: 120%;
+}
+
+.framed-gif__gif-gif_2 {
+  width: 120%;
+  height: 120%;
+}
+
+.framed-gif__icon_gif_3 {
+  width: 130%;
+  height: 130%;
+}
+
+.framed-gif__gif-gif_3 {
+  width: 130%;
+  height: 130%;
+}
+
+.framed-gif__icon_gif_4 {
+  width: 145%;
+  height: 145%;
+}
+
+.framed-gif__gif-gif_4 {
+  width: 145%;
+  height: 145%;
+}
+
+.framed-gif__icon_gif_5 {
+  width: 145%;
+  height: 145%;
+}
+
+.framed-gif__gif-gif_5 {
+  width: 145%;
+  height: 145%;
+}
+
+
+@media screen and (max-width: 480px) {
+  .framed-gif {
+    width: 30vw;
+    height: 30vw;
+  }
+}

@@ -1,4 +1,4 @@
-.bad-ways {
+.badWays {
   width: 97%;
   display: flex;
   align-items: center;
@@ -6,7 +6,7 @@
   padding-bottom: 10.1vw;
 }
 
-.bad-ways__about {
+.about {
   width: 49vw;
   text-align: center;
   display: flex;
@@ -16,19 +16,19 @@
   margin-bottom: 4.53125vw;
 }
 
-.bad-ways__title {
+.title {
   font-family: var(--font-header);
   font-size: var(--font-size-h2);
   margin-bottom: 1.3vw;
 }
 
-.bad-ways__subtitle {
+.subtitle {
   font-family: var(--font-main);
   font-size: var(--font-size-p);
   width: 80%;
 }
 
-.bad-ways__card-list {
+.list {
   list-style: none;
   margin: 0 0 4.95vw 0;
   padding: 0;
@@ -37,42 +37,41 @@
   width: 100%;
 }
 
-.bad-ways__list-element {
+.listElement {
 
 }
 
-.bad-ways__button {
+.button {
   width: 42.3%;
 }
 
 @media screen and (max-width: 480px) {
-  .bad-ways {
+  .badWays {
     width: 100%;
     padding-bottom: 13vw;
   }
 
-  .bad-ways__about {
+  .about {
     width: 100%;
     margin-bottom: 5vw;
   }
 
-  .bad-ways__title {
+  .title {
     margin-bottom: 3vw;
   }
 
-  .bad-ways__subtitle {
+  .subtitle {
     width: 100%;
   }
 
-  .bad-ways__card-list {
+  .list {
     display: grid;
     gap: 3.5vw;
     justify-content: center;
     margin: 0 0 7vw 0;
-
   }
 
-  .bad-ways__button {
+  .button {
     width: 100%;
   }
 }

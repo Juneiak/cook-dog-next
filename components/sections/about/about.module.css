@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.about__company-name {
+.companyName {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,7 @@
   
 }
 
-.about__title {
+.title {
   color: var(--color-white);
   margin: 0;
   font-family: var(--font-header);
@@ -24,7 +24,7 @@
   text-align: center;
 }
 
-.about__subtitle {
+.subtitle {
   color: var(--color-white);
   font-family: var(--font-main);
   font-size: 2.3vw;
@@ -32,7 +32,7 @@
   text-align: center;
 }
 
-.about__container {
+.container {
   max-width: 61%;
   color: var(--color-white);
   display: flex;
@@ -40,21 +40,21 @@
   align-items: center;
 }
 
-.about__about-title {
+.aboutTitle {
   font-family: var(--font-header);;
   color: var(--color-white);
   margin-bottom: 1.0417vw;
   font-size: var(--font-size-h2);
 }
 
-.about__text-container {
+.textContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 1.3021vw;
 }
 
-.about__text {
+.text {
   font-family: var(--font-main);
   font-size: var(--font-size-p);
   color: var(--color-white);
@@ -62,15 +62,15 @@
   margin-bottom: 0.15625vw;
 }
 
-.about__text_width_320 {
+.text320 {
   display: none;
 }
 
-.about__text:last-child {
+.text:last-child {
   margin-bottom: 0;
 }
 
-.about__subtext {
+.subtext {
   font-family: var(--font-main);
   font-size: var(--font-size-p);
   color: var(--color-white);
@@ -84,38 +84,38 @@
     width: 100%;
   }
   
-  .about__company-name {
+  .companyName {
     width: 91%;
     margin-bottom: 9vw;
   }
   
-  .about__title {
+  .title {
     margin-bottom: 2.5vw;
     text-align: center;
   }
   
-  .about__subtitle {
+  .subtitle {
     font-size: 5.4vw;
     margin-bottom: 8vw;
   }
   
-  .about__container {
+  .container {
     max-width: 100%;
   }
   
-  .about__about-title {
+  .aboutTitle {
     margin-bottom: 3vw;
   }
   
-  .about__text-container {
+  .textContainer {
     margin-bottom: 3vw;
   }
   
-  .about__text {
+  .text {
     display: none;
   }
 
-  .about__text_width_320 {
+  .text320 {
     display: flex;
     line-height: 1.5;
     width: 110%;

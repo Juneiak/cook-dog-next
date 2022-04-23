@@ -1,0 +1,13 @@
+.card {
+  display: grid;
+  gap: 2.5vw;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  width: 39.6875vw;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
