@@ -1,4 +1,5 @@
-import styles from './about.module.css'
+import styles from './about.module.css';
+import ButtonPrimary from '../../buttons/button-primary/button-primary';
 
 export default function About({ onPopUpButtonClick }) {
   return (
@@ -6,7 +7,7 @@ export default function About({ onPopUpButtonClick }) {
       <div className={styles.companyName}>
         <h1 className={styles.title}>CookDog</h1>
         <span className={styles.subtitle}>Собака. Повар. Агентство.</span>
-        <button onClick={onPopUpButtonClick} name="leave-contact" type="button" className="button">Начать</button>
+        <ButtonPrimary clickHandler={onPopUpButtonClick} name="leave-contact" text='Начать' />
       </div>
       
       <div className={styles.container}>

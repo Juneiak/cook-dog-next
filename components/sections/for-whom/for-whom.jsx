@@ -1,5 +1,6 @@
 import styles from './for-whom.module.css';
 import ForWhomCard from './for-whom-card/for-whom-card';
+import ButtonPrimary from '../../buttons/button-primary/button-primary';
 
 import icon1 from '../../../public/images/icons/icon1.png';
 import icon2 from '../../../public/images/icons/icon2.png';
@@ -37,7 +38,8 @@ export default function ForWhom({ onPopUpButtonClick }) {
 
       </ul>
       <div className={styles.button}>
-        <button onClick={onPopUpButtonClick} name="leave-contact" type="button" className="button">Пора к нам!</button>
+        <ButtonPrimary clickHandler={onPopUpButtonClick} name="leave-contact" text='Пора к нам!' />
+
       </div>
     </section>
   )

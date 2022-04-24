@@ -1,4 +1,5 @@
-import styles from './form-section.module.css'
+import styles from './form-section.module.css';
+import ButtonPrimary from '../../buttons/button-primary/button-primary';
 
 export default function FormSection({ onPopUpButtonClick }) {
   return (
@@ -28,12 +29,12 @@ export default function FormSection({ onPopUpButtonClick }) {
               className={styles.input}
             />
           </div>
-          <button type="button" name="leave-contact" className={`button ${styles.button}`}>Записаться</button>
+          <ButtonPrimary clickHandler={() => false} stylesClass={styles.button} name="send-contact" text='Записаться' />
         </div>
       </form>
       <div className={styles.sectionButtonContainer}>
         <h2 className={styles.sectionTitle}>Хочешь расти? Запишись к нам на консультацию!</h2>
-        <button onClick={onPopUpButtonClick} type="button" name="leave-contact" className="button">Записаться</button>
+        <ButtonPrimary clickHandler={onPopUpButtonClick} name="leave-contact" text='Записаться' />
       </div>
     </section>
   )

@@ -1,5 +1,6 @@
 import styles from './form-pop-up.module.css';
 import PopUp from '../pop-up/pop-up';
+import ButtonPrimary from '../../buttons/button-primary/button-primary';
 
 export default function FormPopUp({ popUpHandler }) {
   return (
@@ -39,7 +40,8 @@ export default function FormPopUp({ popUpHandler }) {
               />
             </label>
           </fieldset>
-          <button type="button" className={`button ${styles.button}`}>Отправить</button>
+          <ButtonPrimary clickHandler={() => false} stylesClass={styles.button} name="send-contact" text='Отправить' />
+          
         </form>
       </section>
     </PopUp>

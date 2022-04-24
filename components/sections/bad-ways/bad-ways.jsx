@@ -2,6 +2,7 @@ import styles from './bad-ways.module.css';
 import cardStyles from './bad-ways-card/bad-ways-card.module.css';
 
 import BadWaysCard from './bad-ways-card/bad-ways-card';
+import ButtonPrimary from '../../buttons/button-primary/button-primary';
 
 export default function BadWays({ onPopUpButtonClick }) {
   return (
@@ -99,7 +100,8 @@ export default function BadWays({ onPopUpButtonClick }) {
       </li>
     </ul>
     <div className={styles.button}>
-      <button onClick={onPopUpButtonClick} name="leave-contact" type="button" className="button">Расслабиться</button>
+      <ButtonPrimary clickHandler={onPopUpButtonClick} name="leave-contact" text='Расслабиться' />
+
     </div>
   </section>
   )
