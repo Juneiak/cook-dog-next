@@ -124,7 +124,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .big-card {
+  .badWaysCard {
     width: 90vw;
     font-size: 3.5vw;
     height: 155.6vw;

@@ -1,12 +1,12 @@
 import styles from './about.module.css'
 
-export default function About() {
+export default function About({ onPopUpButtonClick }) {
   return (
     <section className={styles.about}>
       <div className={styles.companyName}>
         <h1 className={styles.title}>CookDog</h1>
         <span className={styles.subtitle}>Собака. Повар. Агентство.</span>
-        <button name="leave-contact" type="button" className="button">Начать</button>
+        <button onClick={onPopUpButtonClick} name="leave-contact" type="button" className="button">Начать</button>
       </div>
       
       <div className={styles.container}>

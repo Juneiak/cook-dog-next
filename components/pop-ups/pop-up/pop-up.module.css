@@ -10,10 +10,10 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  opacity: 0;
+  /* opacity: 0; */
   display: flex;
   transition: opacity 0.2s linear, visibility 0.2s linear;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 .popUpOpened {
   opacity: 1;

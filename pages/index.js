@@ -2,6 +2,7 @@ import styles from '../styles/page-styles/index.module.css';
 
 import MainLayout from '../components/main-layout/main-layout';
 import FormPopUp from '../components/pop-ups/form-pop-up/form-pop-up';
+import { useState, useEffect } from 'react';
 
 import {
   About,
@@ -15,20 +16,30 @@ import {
 } from '../components/sections/index.js';
 
 export default function Home() {
+  const [ popUpState, setPopUpState ] = useState(false);
 
+  const handleTogglePopup = () => {
+    setPopUpState(!popUpState);
+  }
+
+  useEffect(() => {
+    console.log(popUpState)
+
+  }, [popUpState])
+  
   return (
     <MainLayout>
       <div className={styles.content}>
 
         <main className={styles.main}>
 
-          <About />
+          <About onPopUpButtonClick={handleTogglePopup} />
 
-          <ForWhom />
+          <ForWhom onPopUpButtonClick={handleTogglePopup} />
           
           <WhatWeDo />
           
-          <BadWays />
+          <BadWays onPopUpButtonClick={handleTogglePopup}  />
           
           <Team />
 
@@ -36,11 +47,11 @@ export default function Home() {
 
           <Advantages />
 
-          <FormSection />
+          <FormSection onPopUpButtonClick={handleTogglePopup}  />
 
         </main>
 
-        <FormPopUp />
+        {popUpState && <FormPopUp popUpHandler={handleTogglePopup} />}
         
       </div>
     </MainLayout>

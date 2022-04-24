@@ -7,7 +7,7 @@ export default function TeamCard({ name, power, bonus, position }) {
       <img 
         src={`./images/avatars/${position}.png`}
         alt="аватар"
-        className={styles.avata}
+        className={styles.avatar}
       />
       <div className={styles.content}>
         <span className={styles.name}>{name}</span>

@@ -1,6 +1,6 @@
 import styles from './form-section.module.css'
 
-export default function FormSection() {
+export default function FormSection({ onPopUpButtonClick }) {
   return (
     <section className={styles.formSection}>
       <form className={styles.form}>
@@ -33,7 +33,7 @@ export default function FormSection() {
       </form>
       <div className={styles.sectionButtonContainer}>
         <h2 className={styles.sectionTitle}>Хочешь расти? Запишись к нам на консультацию!</h2>
-        <button type="button" name="leave-contact" className="button">Записаться</button>
+        <button onClick={onPopUpButtonClick} type="button" name="leave-contact" className="button">Записаться</button>
       </div>
     </section>
   )

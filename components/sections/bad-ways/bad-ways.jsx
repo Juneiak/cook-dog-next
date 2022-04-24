@@ -3,7 +3,7 @@ import cardStyles from './bad-ways-card/bad-ways-card.module.css';
 
 import BadWaysCard from './bad-ways-card/bad-ways-card';
 
-export default function BadWays() {
+export default function BadWays({ onPopUpButtonClick }) {
   return (
     <section className={styles.badWays}>
     <div className={styles.about}>
@@ -99,7 +99,7 @@ export default function BadWays() {
       </li>
     </ul>
     <div className={styles.button}>
-      <button name="leave-contact" type="button" className="button">Расслабиться</button>
+      <button onClick={onPopUpButtonClick} name="leave-contact" type="button" className="button">Расслабиться</button>
     </div>
   </section>
   )

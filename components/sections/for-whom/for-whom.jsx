@@ -6,7 +6,7 @@ import icon2 from '../../../public/images/icons/icon2.png';
 import icon3 from '../../../public/images/icons/icon3.png';
 
 
-export default function ForWhom() {
+export default function ForWhom({ onPopUpButtonClick }) {
   return (
     <section className={styles.forWhom}>
       <h2 className={styles.title}>Если у тебя:</h2>
@@ -37,7 +37,7 @@ export default function ForWhom() {
 
       </ul>
       <div className={styles.button}>
-        <button name="leave-contact" type="button" className="button">Пора к нам!</button>
+        <button onClick={onPopUpButtonClick} name="leave-contact" type="button" className="button">Пора к нам!</button>
       </div>
     </section>
   )

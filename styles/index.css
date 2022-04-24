@@ -1,27 +1,5 @@
 @import url(./normalize.css);
-@import url(./root.css);
+@import url(./ui/root.css);
 @import url(./fonts/fonts.css);
 
-@import url(./blocks/button.css);
-/* @import url(./blocks/page.css); */
-/* @import url(./blocks/main.css); */
-/* @import url(./blocks/footer.css); */
-/* @import url(./blocks/about.css); */
-/* @import url(./blocks/card-about.css); */
-/* @import url(./blocks/for-whom.css); */
-/* @import url(./blocks/framed-icon.css); */
-/* @import url(./blocks/what-we-do.css); */
-/* @import url(./blocks/framed-gif.css); */
-/* @import url(./blocks/bad-ways.css); */
-/* @import url(./blocks/big-card.css); */
-/* @import url(./blocks/team.css); */
-/* @import url(./blocks/slider.css); */
-/* @import url(./blocks/small-card.css); */
-/* @import url(./blocks/cases.css); */
-/* @import url(./blocks/company-card.css); */
-/* @import url(./blocks/advantages.css); */
-/* @import url(./blocks/middle-card.css); */
-/* @import url(./blocks/form.css); */
-/* @import url(./blocks/pop-up.css); */
-/* @import url(./blocks/form-pop-up.css); */
-/* @import url(./blocks/form-section.css); */
+@import url(./ui/button.css);
