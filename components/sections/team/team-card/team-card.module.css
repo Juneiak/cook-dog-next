@@ -1,4 +1,4 @@
-.small-card {
+.card {
   width: 17.97vw;
   height: 27.24vw;
   position: relative;
@@ -10,8 +10,8 @@
   align-items: end;
 }
 
-.small-card__card-image {
-  background-image: url(../../public/images/small-card.png);
+.image {
+  background-image: url(../../../../public/images/small-card.png);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -22,13 +22,13 @@
   z-index: 2;
 }
 
-.small-card__avatar {
+.avatar {
   position: relative;
   z-index: 1;
   width: 51.3%;
 }
 
-.small-card__content {
+.content {
   position: relative;
   z-index: 3;
   align-self: start;
@@ -38,44 +38,44 @@
   width: 100%;
 }
 
-.small-card__member-name {
+.name {
   font-family: var(--font-header);
   font-size: 1em;
   margin: -3% 0 25% 0;
 }
 
-.small-card__about-member {
+.about {
   width: 75%;
   font-family: var(--font-main);
   font-size: 0.9em;
   text-align: center;
 }
 
-.small-card__power {
+.power {
   margin-bottom: 3%;
 }
 
-.small-card__power::before {
+.power::before {
   content: 'СИЛА: ';
   font-weight: 600;
 }
 
-.small-card__bonus {
+.bonus {
 }
 
-.small-card__bonus::before {
+.bonus::before {
   content: 'БОНУС: ';
   font-weight: 600;
 }
 
 @media screen and (max-width: 480px) {
-  .small-card {
+  .card {
     width: 40vw;
     height: 60.64vw;
     font-size: 2.4vw;
   }
 
-  .small-card__member-name {
+  .name {
     font-family: var(--font-header);
     font-size: 1em;
     margin: -3% 0 30% 0;

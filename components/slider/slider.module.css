@@ -1,4 +1,4 @@
-.slider {
+.slider{
   width: 100%;
   height: max-content;
   box-sizing: border-box;
@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.slider__list {
+.list {
   list-style: none;
   margin: 0;
   display: grid;
@@ -21,17 +21,17 @@
   position: relative;
 }
 
-.slider__element-is-active {
+.elementIsActive {
   transform: scale(1.2);
 }
 
-.slider__list-element {
+.listElement {
   transition: transform 0.2s linear;
 }
 
 
 @media screen and (max-width: 480px) {
-  .slider__list {
+  .list {
     padding: 5vw 0;
   }
 }

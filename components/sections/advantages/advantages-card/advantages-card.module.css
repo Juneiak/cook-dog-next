@@ -1,7 +1,7 @@
-.middle-card {
+.card {
   width: 31.73vw;
   height: 46.2vw;
-  background-image: url(../../public/images/middle-card.png);
+  background-image: url(../../../../public/images/middle-card.png);
   background-size: contain;
   background-repeat: no-repeat;
   color: var(--color-white);
@@ -14,7 +14,7 @@
   position: relative;
 }
 
-.middle-card__shadow {
+.shadow {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -27,11 +27,11 @@
   z-index: 5;
 }
 
-.middle-card__shadow:hover {
+.shadow:hover {
   opacity: 1;
 }
 
-.middle-card__header {
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +42,7 @@
   height: 100%;
 }
 
-.middle-card__card-name {
+.name {
   font-size: 2.3em;
   position: relative;
   z-index: 2;
@@ -50,27 +50,27 @@
   line-height: 0.01px;
 }
 
-.middle-card__name-logo {
+.logo {
   position: absolute;
   z-index: 1;
   width: 30%;
   height: 50%;
 }
 
-.middle-card__list {
+.list {
   list-style: none;
   padding: 0;
   margin: 0;
   width: 75%;
 }
 
-.middle-card__list-element {
+.listElement {
   font-size: 1em;
   margin-bottom: 4%;
 }
 
 
-.middle-card__price-container {
+.price {
   height: 27%;
   width: 47%;
   background-color: #ff9bab;
@@ -80,52 +80,38 @@
   font-weight: 600;
 }
 
-.middle-card__price {
-
-}
-
 @media screen and (max-width: 1300px) {
-  .middle-card__shadow {
+  .shadow {
     box-shadow: 0px 0px 100px 20px rgba(96, 210, 242, 0.4) inset;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .middle-card__shadow {
+  .shadow {
     box-shadow: 0px 0px 100px 5px rgba(96, 210, 242, 0.4) inset;
   }
 }
 
-
-
 @media screen and (max-width: 480px) {
-  .middle-card {
+  .card {
     width: 90vw;
     height: 131.04vw;
     font-size: 3.2vw;
   }
 
-  .middle-card__card-name {
+  .name {
     box-shadow: 0px 0px 60px 25px rgba(0, 0, 0, 0.53);
   }
 
-  .middle-card__list {
+  .list {
     width: 65%;
   }
 
-  .middle-card__list-element {
+  .listElement {
     margin-bottom: 6%;
   }
 
-  .middle-card__shadow {
+  .shadow {
     box-shadow: 0px 0px 100px 20px rgba(96, 210, 242, 0.4) inset;
   }
-/* 
-  .middle-card__card-name {
-    font-size: 2.3em;
-  }
-
-  .middle-card__list-element {
-    font-size: 1em;
-  } */
 }

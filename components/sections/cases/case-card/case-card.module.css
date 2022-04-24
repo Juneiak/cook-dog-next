@@ -1,4 +1,4 @@
-.company-card {
+.card {
   width: 23.7vw;
   height: 13.746vw;
   position: relative;
@@ -8,8 +8,8 @@
   font-size: var(--font-size-p);
 }
 
-.company-card__frame {
-  background-image: url(../../public/images/company-logo-frame.png);
+.frame {
+  background-image: url(../../../../public/images/company-logo-frame.png);
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 2;
@@ -20,7 +20,7 @@
   left: 0;
 }
 
-.company-card__content {
+.content {
   position: absolute;
   
   width: 90%;
@@ -33,7 +33,7 @@
   justify-content: center;
 }
 
-.company-card__image {
+.image {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -42,7 +42,7 @@
   
 }
 
-.company-card__about {
+.about {
   position: relative;
   z-index: 2;
   color: var(--color-white);
@@ -60,22 +60,22 @@
   transition: opacity 0.2s linear;
 }
 
-.company-card:hover .company-card__about {
+.card:hover .about {
   opacity: 1;
 }
 
-.company-card__name {
+.name {
   font-weight: 600;
   width: 90%;
   margin: -3% 0 4%;
 }
 
-.company-card__text {
+.text {
   width: 90%;
 }
 
 @media screen and (max-width: 480px) {
-  .company-card {
+  .card {
     width: 60vw;
     height: 34.8vw;
   }

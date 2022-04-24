@@ -1,4 +1,4 @@
-.pop-up {
+.popUp {
   position: fixed;
   top: 0;
   left: 0;
@@ -15,16 +15,16 @@
   transition: opacity 0.2s linear, visibility 0.2s linear;
   visibility: hidden;
 }
-.pop-up__opened {
+.popUpOpened {
   opacity: 1;
   visibility: visible;
 }
 
-.pop-up_close-button {
+.closeButton {
   position: absolute;
   top: 30px;
   right: 30px;
-  background-image: url(../../public/images/close-icon.svg);
+  background-image: url(../../../public/images/close-icon.svg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 50px;
@@ -35,17 +35,13 @@
   transition: transform 0.2s linear;
 }
 
-.pop-up_close-button:hover {
+.closeButton:hover {
   transform: scale(1.1);
 }
 
-.pop-up__content {
+.content {
   cursor: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (max-width: 480px) {
-  
 }

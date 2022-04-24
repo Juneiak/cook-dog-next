@@ -7,7 +7,7 @@ export default function MainLayout({ children }) {
   return (
     <div className={styles.page}>
       <Header />
-      {children}
+        {children}
       <Footer />
     </div>
   )

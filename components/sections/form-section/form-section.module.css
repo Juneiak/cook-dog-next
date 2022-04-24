@@ -1,5 +1,25 @@
+.formSection {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sectionButtonContainer {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-size: 5vw;
+  font-family: var(--font-header);
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 7vw;
+}
+
 .form {
-  background-image: url(../../public/images/contact-frame.png);
+  background-image: url(../../../public/images/contact-frame.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 48.6vw;
@@ -15,7 +35,7 @@
   opacity: 1;
 }
 
-.form__shadow {
+.shadow {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -28,7 +48,7 @@
   transition: opacity 0.15s linear;
 }
 
-.form__container {
+.container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1.5fr 1.5fr 1fr;
@@ -38,14 +58,14 @@
   z-index: 10;
 }
 
-.form__title {
+.title {
   font-size: var(--font-size-h2);
   font-family: var(--font-header);
   color: var(--color-white);
 }
 
 
-.form__inputs-container {
+.inputsContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -54,7 +74,7 @@
   height: 100%;
 }
 
-.form__input {
+.input {
   width: 90%;
   font-family: var(--font-header);
   outline: none;
@@ -64,15 +84,19 @@
   border: none;
 }
 
-/* .form__input:focus {
-  transform: scale(1.07);
-} */
-.form__button:hover {
+.button:hover {
   transform: none;
 }
 
-
 @media screen and (max-width: 480px) {
+  .formSection {
+    width: 100%;
+    justify-content: center;
+  }
+  .sectionButtonContainer {
+    display: flex;
+  }
+
   .form {
     display: none;
   }
