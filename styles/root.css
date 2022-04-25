@@ -32,7 +32,7 @@ h1, h2, h3, p {
 @media screen and (max-width: 480px) {
   :root {
     --font-size-h1: 11.4vw;;
-    --font-size-h2: 4.5vw;
+    --font-size-h2: 4.4vw;
     --font-size-h3: 3vw;
     --font-size-p: 4vw;
     --font-size-p2: 3.3vw

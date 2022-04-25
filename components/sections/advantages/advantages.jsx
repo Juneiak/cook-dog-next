@@ -2,11 +2,14 @@ import styles from './advantages.module.css';
 import cardStyles from './advantages-card/advantages-card.module.css';
 
 import AdvantagesCard from './advantages-card/advantages-card'
+import SectionTitle from '../../section-title/section-title';
 
 export default function Advantages() {
   return (
     <section className={styles.advantages}>
-      <h2 className={styles.title}>Уже не терпится с нами поработать?</h2>
+      <div className={styles.about}>
+        <SectionTitle position='3' text='Уже не терпится с нами поработать?' />
+      </div>
       <ul className={styles.list}>
         <li className={styles.listElement}>
           <AdvantagesCard price='ОТ 300.000 РУБ' name='LAUNCH' position={12}>

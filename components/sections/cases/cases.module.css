@@ -6,12 +6,10 @@
   padding-bottom: 7.4vw;
 }
 
-.title {
-  color: var(--color-dark-turquoise);
-  font-size: var(--font-size-h2);
-  font-family: var(--font-header);
+.about {
   margin-bottom: 2.7vw;
 }
+
 
 .list {
   list-style: none;

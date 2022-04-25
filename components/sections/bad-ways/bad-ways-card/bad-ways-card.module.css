@@ -1,23 +1,17 @@
 .badWaysCard {
-  background-image: url(../../../../public/images/big-card.png);
+  background-image: url(../../../../public/images/bad-ways-card/card.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 31.47vw;
   font-size: 1.3vw;
   height: 54.1284vw;
   position: relative;
+  transition: background-image 0.35s linear;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  border-radius: 40px;
-  box-shadow: 0px 0px 100px 55px rgba(52, 119, 156, 0.4) inset;
-  transition: opacity linear 0.15s;
+.badWaysCard:hover {
+  background-image: url(../../../../public/images/bad-ways-card/card-light.png);
 }
 
 .shadow:hover {

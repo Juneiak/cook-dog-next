@@ -1,0 +1,33 @@
+.frame {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 100%;
+  padding: 2vw 3.4vw;
+  margin: auto;
+}
+
+.frame1 {
+  background-image: url(../../public/images/title-frames/frame1.png);
+}
+
+.frame2 {
+  background-image: url(../../public/images/title-frames/frame2.png);
+}
+
+.frame3 {
+  background-image: url(../../public/images/title-frames/frame3.png);
+}
+
+.title {
+  font-size: var(--font-size-h2);
+  font-family: var(--font-header);
+  text-align: center;
+  color: var(--color-white)
+}
+
+@media screen and (max-width: 480px) {
+  .frame {
+    padding: 5vw 4.5vw;
+  }
+}
