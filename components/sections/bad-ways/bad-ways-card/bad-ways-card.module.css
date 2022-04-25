@@ -2,12 +2,13 @@
   background-image: url(../../../../public/images/bad-ways-card/card.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 31.47vw;
+  width: 34.75vw;
   font-size: 1.3vw;
-  height: 54.1284vw;
+  height: 57.4vw;
   position: relative;
   transition: background-image 0.35s linear;
   background-color: rgba(0, 0, 0, 0);
+  margin: -1.64vw;
 }
 
 .badWaysCard:hover {
@@ -119,9 +120,10 @@
 
 @media screen and (max-width: 480px) {
   .badWaysCard {
-    width: 90vw;
+    width: 99vw;
     font-size: 3.5vw;
-    height: 155.6vw;
+    height: 165vw;
+    margin: -4.7vw;
   }
 
   .conText::before {

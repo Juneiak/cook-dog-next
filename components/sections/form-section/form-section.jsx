@@ -5,7 +5,6 @@ export default function FormSection({ onPopUpButtonClick }) {
   return (
     <section className={styles.formSection}>
       <form className={styles.form}>
-        <div className={styles.shadow}></div>
         <div className={styles.container}>
           <h2 className={styles.title}>Хочешь расти? Запишись к нам на консультацию!</h2>
           <div className={styles.inputsContainer}>

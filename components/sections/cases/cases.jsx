@@ -1,10 +1,13 @@
 import styles from './cases.module.css';
 
 import CaseCard from './case-card/case-card';
+import CaseVideoCard from './case-video-card/case-video-card';
 import { casesData } from '../../../public/data';
 import SectionTitle from '../../section-title/section-title';
 
-export default function Cases() {
+export default function Cases({ onVideoClick }) {
+
+
   return (
     <section className={styles.cases}>
       <div className={styles.about}>
@@ -16,6 +19,9 @@ export default function Cases() {
             <CaseCard {...caseData} />
           </li>
         ))}
+        <li className={styles.listElement}>
+            <CaseVideoCard onClick={onVideoClick} />
+          </li>
       </ul>
     </section>
   )

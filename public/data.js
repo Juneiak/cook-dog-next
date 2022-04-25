@@ -66,11 +66,11 @@ const casesData = [
     text: 'Премиальный контент для премиальной мебели',
     position: 3,
   },
-  {
-    name: 'KROWATSON',
-    text: 'Миллионы на мебели через инстаграм<',
-    position: 2,
-  }
+  // {
+  //   name: 'KROWATSON',
+  //   text: 'Миллионы на мебели через инстаграм<',
+  //   position: 2,
+  // }
 ]
 
 export {
