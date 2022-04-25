@@ -6,7 +6,7 @@ import SectionTitle from '../../section-title/section-title';
 
 export default function Advantages() {
   return (
-    <section className={styles.advantages}>
+    <section id='advantages' className={styles.advantages}>
       <div className={styles.about}>
         <SectionTitle position='3' text='Уже не терпится с нами поработать?' />
       </div>

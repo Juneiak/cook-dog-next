@@ -9,7 +9,7 @@ export default function Cases({ onVideoClick }) {
 
 
   return (
-    <section className={styles.cases}>
+    <section id='cases' className={styles.cases}>
       <div className={styles.about}>
         <SectionTitle position='2' text='Кейсы' />
       </div>

@@ -9,7 +9,7 @@ import icon3 from '../../../public/images/icons/icon3.png';
 
 export default function ForWhom({ onPopUpButtonClick }) {
   return (
-    <section className={styles.forWhom}>
+    <section id='forWhom' className={styles.forWhom}>
       <h2 className={styles.title}>Если у тебя:</h2>
       <ul className={styles.list}>
 

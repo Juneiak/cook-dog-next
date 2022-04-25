@@ -5,7 +5,7 @@ import SectionTitle from '../../section-title/section-title';
 
 export default function Team() {
   return (
-    <section className={styles.team}>
+    <section id='ourTeam' className={styles.team}>
       <div className={styles.about}>
         <SectionTitle position='1' text='Кстати, знакомься. Вот наши очумелые ручки, глазки и мозги:' />
       </div>

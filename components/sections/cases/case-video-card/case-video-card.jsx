@@ -23,7 +23,7 @@ export default function CaseVideoCard({ onClick }) {
       <div className={styles.content}>
         <img src={`/images/companies-logo/2.png`} alt="лого компании" className={styles.image} />
         <div className={styles.about}>
-          <video ref={refContainer} className={styles.video}  autoplay loop muted >
+          <video ref={refContainer} className={styles.video} autoPlay loop muted >
             <source src='/1.mp4' type='video/mp4'></source>
           </video>
         </div>

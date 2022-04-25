@@ -19,7 +19,7 @@ import gif5 from '../../../public/images/gif/gif5.gif';
 
 export default function WhatWeDo() {
   return (
-    <section className={styles.whatWeDo}>
+    <section id='whatWeDo' className={styles.whatWeDo}>
       <h2 className={styles.title}>Что мы сделаем:</h2>
       <ul className={styles.list}>
         <li className={styles.listElement}>

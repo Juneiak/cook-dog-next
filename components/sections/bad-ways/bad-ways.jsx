@@ -6,7 +6,7 @@ import ButtonPrimary from '../../buttons/button-primary/button-primary';
 
 export default function BadWays({ onPopUpButtonClick }) {
   return (
-    <section className={styles.badWays}>
+    <section id='badWays' className={styles.badWays}>
     <div className={styles.about}>
       <h2 className={styles.title}>Твоя личная команда маркетинга на удаленке</h2>
       <span className={styles.subtitle}>Давай разберем как обычно делают бизнесмены и почему так делать не стоит:</span>
