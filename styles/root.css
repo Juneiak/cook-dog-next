@@ -51,3 +51,41 @@ h1, h2, h3, p {
   }
 }
 
+
+
+
+@keyframes card-flipping {
+  0% {
+      transform: rotate3d(0, 1, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+}
+
+@keyframes card-background-transformation {
+  0%, 50% {
+    background-image: url(../public/images/team-card/team-card.png);
+  }
+  100% {
+    background-image: url(../public/images/team-card/gold-team-card.png);
+    box-shadow: 0px 0px 59px 33px rgba(255, 215, 0, 0.2) inset;
+    color: gold
+  }
+}
+
+
+.elementIsActive {
+  transform: scale(1.2);
+}
+
+#teamMemberCard.elementIsActive #teamCardImage {
+  animation: card-background-transformation 0.5s forwards;
+}
+
+#teamMemberCard.elementIsActive #teamCard {
+  animation: card-flipping 0.5s forwards linear;
+}

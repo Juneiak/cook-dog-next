@@ -11,7 +11,7 @@
 }
 
 .image {
-  background-image: url(../../../../public/images/small-card.png);
+  background-image: url(../../../../public/images/team-card/team-card.png);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;

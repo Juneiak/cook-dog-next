@@ -2,8 +2,8 @@ import styles from './team-card.module.css'
 
 export default function TeamCard({ name, power, bonus, position }) {
   return (
-    <article className={styles.card}>
-      <div className={styles.image}></div>
+    <article id='teamCard' className={styles.card}>
+      <div id='teamCardImage' className={styles.image}></div>
       <img 
         src={`./images/avatars/${position}.png`}
         alt="аватар"

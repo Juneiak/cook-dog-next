@@ -70,7 +70,7 @@
   content: '';
   min-height: 10px;
   min-width: 10px;
-  background-image: url(../../../../public/images/list-dot.png);
+  background-image: url(../../../../public/images/misc/list-dot.png);
   align-self: flex-start;
   margin: 1.7% 1.9% 0 0;
   background-repeat: no-repeat;

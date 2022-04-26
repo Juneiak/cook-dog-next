@@ -9,7 +9,7 @@ export default function Footer() {
         <ul className={styles.list}>
           <li className={styles.listElement}>
             <a href="https://vk.com/cookdog" target="blank" className={styles.link}>
-              <img src="/images/vk-icon.svg" alt="иконка вк" className={styles.linkIcon} />
+              <img src="/images/misc/vk-icon.svg" alt="иконка вк" className={styles.linkIcon} />
             </a>
           </li>
         </ul>
