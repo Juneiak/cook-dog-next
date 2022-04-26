@@ -17,19 +17,17 @@
 .gif {
   position: absolute;
   opacity: 0;
-  display: none;
+
   width: 100%;
   height: 100%;
 }
 
 .framedGif:hover .gif {
   opacity: 1;
-  display: block;
 }
 
 .framedGif:hover .icon {
   opacity: 0;
-  display: none;
 }
 
 .iconPosition1 {

@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.content}>
         <span className={styles.author}>CookDog Agency Design</span>
-        <span className={styles.number}>+ 7 937 944 99 15</span>
+        <span className={styles.number}>+7 927 084 44 88</span>
         <ul className={styles.list}>
           <li className={styles.listElement}>
             <a href="https://vk.com/cookdog" target="blank" className={styles.link}>

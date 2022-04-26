@@ -13,7 +13,7 @@ export default function BadWays({ onPopUpButtonClick }) {
     </div>
     <ul className={styles.list}>
       <li className={styles.listElement}>
-        <BadWaysCard title='НОБРАТЬ ОТДЕЛ МАРКЕТИНГА В ШТАТ' total='Итог: Много затрат, нервов и результат только через полгода.'>
+        <BadWaysCard title='НАБРАТЬ ОТДЕЛ МАРКЕТИНГА В ШТАТ' total='Итог: Много затрат, нервов и результат только через полгода.'>
           <img src="/images/icons/icon9.png" alt="иконка спецов" className={cardStyles.icon} />
           <ul className={cardStyles.consList}>
             <li className={cardStyles.con}>
@@ -41,7 +41,7 @@ export default function BadWays({ onPopUpButtonClick }) {
       </li>
 
       <li className={styles.listElement}>
-        <BadWaysCard title='ВЕСТИ МАРКЕТИНГ САМОМУ ИЛИ ПОПРОСИТЬ ЖЕНУ/ПОДРГУ' total='Итог: Много затрат, нервов и результат только через полгода.'>
+        <BadWaysCard title='ВЕСТИ МАРКЕТИНГ САМОМУ ИЛИ ПОПРОСИТЬ ЖЕНУ/ПОДРУГУ' total='Итог: Много затрат, нервов и результат только через полгода.'>
           <img src="/images/icons/icon10.png" alt="иконка спецов" className={cardStyles.icon} />
           <ul className={cardStyles.consList}>
             <li className={cardStyles.con}>
