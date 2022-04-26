@@ -2,6 +2,18 @@ html {
   font-size: 16px;
 }
 
+body::after {
+  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+  content: 
+    url(../public/images/bad-ways-card/card-light.png)
+    url(../public/images/advantages-card/card-light.png)
+    url(../public/images/gif/gif1.gif)
+    url(../public/images/gif/gif2.gif)
+    url(../public/images/gif/gif3.gif)
+    url(../public/images/gif/gif4.gif)
+    url(../public/images/gif/gif5.gif)
+}
+
 :root {
   --color-white: #ffffff;
   --color-dark-turquoise: #003333;
