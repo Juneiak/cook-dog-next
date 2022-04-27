@@ -13,28 +13,28 @@ export default function ForWhom({ onPopUpButtonClick }) {
       <h2 className={styles.title}>Если у тебя:</h2>
       <ul className={styles.list}>
 
-        <l1 className={styles.listElement}>
+        <li className={styles.listElement}>
           <ForWhomCard
             icon={icon1} title='Маленький бизнес'
             text='Ты только начал и мечтаешь выйти на уровень &quot;Apple&quot;.'
           />
-        </l1>
+        </li>
 
-        <l1 className={styles.listElement}>
+        <li className={styles.listElement}>
           <ForWhomCard
             icon={icon2}
             title='Средний бизнес'
             text='Свой бизнес поставлен на поток, ты в поиске решений по дальнейшему развитию бренда.' 
           />
-        </l1>
+        </li>
 
-        <l1 className={styles.listElement}>
+        <li className={styles.listElement}>
           <ForWhomCard
             icon={icon3}
             title='Собственное производство'
             text='Ты хочешь заявить о себе и выйти на мировой уровень.'
           />
-        </l1>
+        </li>
 
       </ul>
       <div className={styles.button}>

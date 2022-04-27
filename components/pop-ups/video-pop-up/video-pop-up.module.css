@@ -6,6 +6,6 @@
 @media screen and (max-width: 480px) {
   .videoPopUp {
     width: 100vw;
-    height: max-content;
+    height: 70vw;
   }
 }

@@ -1,13 +1,15 @@
 import styles from './header.module.css';
-
+import Link from 'next/link';
 export default function Header() {
 
   return (
     <header className={styles.header}>
       <div className={styles.content}>
-        <a href='/' className={styles.logo}>
-          <span className={styles.name}>COOKDOG</span>
-        </a>
+        <Link href='/'>
+          <a className={styles.logo}>
+            <span className={styles.name}>COOKDOG</span>
+          </a>
+        </Link>
         <nav className={styles.nav}>
           <ul className={styles.list}>
             <li className={styles.listElement}><a href="/prices" className={styles.link}>Цены</a></li>

@@ -57,20 +57,24 @@ const teamData = [
 
 const casesData = [
   {
+    name: 'KROWATSON',
+    text: 'Миллионы на мебели через инстаграм',
+    youtubeUrl: "https://www.youtube.com/embed/GYDS6woFhZM?autoplay=1&iv_load_policy=3",
+    position: 1,
+  },
+  {
     name: 'Автошкола союз',
     text: 'Современный брендинг для советской автошколы',
-    position: 1,
+    youtubeUrl: "https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1&iv_load_policy=3",
+    position: 2,
   },
   {
     name: 'Melatika',
     text: 'Премиальный контент для премиальной мебели',
+    youtubeUrl: "https://www.youtube.com/embed/QH2-TGUlwu4?autoplay=1&iv_load_policy=3",
     position: 3,
   },
-  // {
-  //   name: 'KROWATSON',
-  //   text: 'Миллионы на мебели через инстаграм<',
-  //   position: 2,
-  // }
+  
 ]
 
 export {

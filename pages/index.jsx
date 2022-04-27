@@ -2,7 +2,7 @@ import styles from '../styles/page-styles/index.module.css';
 
 import MainLayout from '../components/main-layout/main-layout';
 import { FormPopUp, VideoPopUp } from '../components/pop-ups';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import {
   About,
@@ -16,16 +16,26 @@ import {
 } from '../components/sections/index.js';
 
 export default function Home() {
-  const [ FormPopUpState, setFormPopUpState ] = useState(false);
-  const [ VideoPopUpState, setVideoPopUpState ] = useState(false);
-
+  const [ formPopUpState, setFormPopUpState ] = useState(false);
+  const [ videoPopUpState, setVideoPopUpState ] = useState(false);
+  const [ popUpVideoUrl, setPopUpVideoUrl ] = useState('');
 
   const handleToggleFormPopup = () => {
-    setFormPopUpState(!FormPopUpState);
+    setFormPopUpState(!formPopUpState);
   }
 
   const handleToggleVideoPopup = () => {
-    setVideoPopUpState(!VideoPopUpState);
+    setVideoPopUpState(!videoPopUpState);
+  }
+
+  const handleOpenVideoPopUp = (videoUrl) => {
+    setVideoPopUpState(true);
+    setPopUpVideoUrl(videoUrl)
+  }
+
+  const handleCloseVideoPopUp = (videoUrl) => {
+    setVideoPopUpState(false);
+    setPopUpVideoUrl('')
   }
   
   return (
@@ -44,7 +54,7 @@ export default function Home() {
           
           <Team />
 
-          <Cases onVideoClick={handleToggleVideoPopup} />
+          <Cases openVideoPopUpHandler={handleOpenVideoPopUp} />
 
           <Advantages />
 
@@ -52,8 +62,8 @@ export default function Home() {
 
         </main>
 
-        {FormPopUpState && <FormPopUp popUpHandler={handleToggleFormPopup} />}
-        {VideoPopUpState && <VideoPopUp popUpHandler={handleToggleVideoPopup} />}
+        {formPopUpState && <FormPopUp popUpHandler={handleToggleFormPopup} />}
+        {videoPopUpState && <VideoPopUp closeHandler={handleCloseVideoPopUp} videoUrl={popUpVideoUrl} />}
         
       </div>
     </MainLayout>

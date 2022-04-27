@@ -38,7 +38,7 @@ export default function Advantages() {
         </li>
 
         <li className={styles.listElement}>
-          <AdvantagesCard price='ОТ 70.000 РУБ<' name='БРЕНДИНГ' position={14}>
+          <AdvantagesCard price='ОТ 70.000 РУБ' name='БРЕНДИНГ' position={14}>
             <ul className={cardStyles.list}>
               <li className={cardStyles.listElement}>– Определение глобальной миссии компании;</li>
               <li className={cardStyles.listElement}>– Создание уникального фирменного стиля;</li>
