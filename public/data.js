@@ -1,23 +1,5 @@
 const teamData = [
   {
-    name: 'Ильназ',
-    power: 'ТАРГЕТИНГ',
-    bonus: '+100500 к новым клиентам',
-    position: 4,
-  },
-  {
-    name: 'Наташа',
-    power: 'ВИДЕО',
-    bonus: '+10 к вовлечению аудитории',
-    position: 6,
-  },
-  {
-    name: 'Ратмир',
-    power: 'ТЕКСТА',
-    bonus: '+10 к зачитывнию до дыр',
-    position: 5,
-  },
-  {
     name: 'Асия',
     power: 'PROJECT MANAGER',
     bonus: '+10 к общению к пунктуальности',

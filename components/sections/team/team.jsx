@@ -1,7 +1,8 @@
 import styles from './team.module.css';
-import Silder from '../../slider/slider';
+import Slider from '../../slider/slider';
 import { teamData } from '../../../public/data';
 import SectionTitle from '../../section-title/section-title';
+
 
 export default function Team() {
   return (
@@ -10,7 +11,7 @@ export default function Team() {
         <SectionTitle position='1' text='Кстати, знакомься. Вот наши очумелые ручки, глазки и мозги:' />
       </div>
       <div className={styles.list}>
-        <Silder data={teamData} />
+        <Slider data={teamData} />
       </div>
     </section>
 

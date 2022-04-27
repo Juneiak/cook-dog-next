@@ -17,11 +17,11 @@
 }
 
 .logo {
-
+  text-decoration: none;
 }
 
 .name {
-  font-size: var(--color-size-h1);
+  font-size: 2vw;
   color: var(--color-white);
   font-family: var(--font-main);
 }

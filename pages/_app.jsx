@@ -1,4 +1,4 @@
-// import '../styles/globals.css'
+import '@splidejs/react-splide/css/core';
 import '../styles/index.css'
 
 function MyApp({ Component, pageProps }) {

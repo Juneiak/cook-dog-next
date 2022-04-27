@@ -1,12 +1,13 @@
-import styles from './header.module.css'
+import styles from './header.module.css';
 
 export default function Header() {
+
   return (
     <header className={styles.header}>
       <div className={styles.content}>
-        <div className={styles.logo}>
+        <a href='/' className={styles.logo}>
           <span className={styles.name}>COOKDOG</span>
-        </div>
+        </a>
         <nav className={styles.nav}>
           <ul className={styles.list}>
             <li className={styles.listElement}><a href="/prices" className={styles.link}>Цены</a></li>
