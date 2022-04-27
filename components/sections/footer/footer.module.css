@@ -4,6 +4,7 @@
   height: 8vw;
   display: flex;
   justify-content: center;
+  align-self: end;
 }
 
 .content {
