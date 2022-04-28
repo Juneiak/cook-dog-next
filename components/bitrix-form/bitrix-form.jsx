@@ -21,13 +21,3 @@ export default function BitrixForm() {
 
   )
 }
-
-{/* <script data-b24-form="inline/16/18x1ee" data-skip-moving="true">
-      (function(w,d,u){
-      var s=d.createElement('script');
-      s.async=true;
-      s.src=u+'?'+(Date.now()/180000|0);
-      var h=d.getElementsByTagName('script')[0];
-      h.parentNode.insertBefore(s,h);
-      })(window,document,'https://cdn-ru.bitrix24.ru/b21322336/crm/form/loader_16.js');
-    </script> */}

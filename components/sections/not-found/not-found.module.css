@@ -34,3 +34,9 @@
   width: 60%;
   height: 7vw;
 }
+
+@media screen and (max-width: 480px) {
+  .notFound {
+    width: 90%;
+  }
+}

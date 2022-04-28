@@ -1,17 +1,23 @@
 import styles from './header.module.css';
 import Link from 'next/link';
-export default function Header() {
+import { useState } from 'react';
 
+export default function Header() {
+  const [ burgerIsOpen, setBurgerIsOpen ] = useState(false);
+  
   return (
     <header className={styles.header}>
       <div className={styles.content}>
-        <Link href='/'>
-          <a className={styles.logo}>
-            <span className={styles.name}>COOKDOG</span>
-          </a>
-        </Link>
+        <div className={styles.logo}>
+          <Link href='/'>
+            <a className={styles.logoLink}>
+              <span className={styles.name}>COOKDOG</span>
+            </a>
+          </Link>
+        </div>
         <nav className={styles.nav}>
-          <ul className={styles.list}>
+          <button onClick={() => setBurgerIsOpen(!burgerIsOpen)} className={`${styles.burger} ${burgerIsOpen ? styles.burgerOpen : ''}`}></button>
+          <ul className={`${styles.list} ${burgerIsOpen ? styles.listOpen : ''}`}>
             <li className={styles.listElement}><a href="/prices" className={styles.link}>Цены</a></li>
             <li className={styles.listElement}><a href="/services" className={styles.link}>Услуги</a></li>
             <li className={styles.listElement}><a href="/cases" className={styles.link}>Кейсы</a></li>

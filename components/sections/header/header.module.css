@@ -11,13 +11,19 @@
 
 .content {
   width: 88%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
 }
 
 .logo {
+}
+
+.logoLink {
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .name {
@@ -29,6 +35,26 @@
 .nav {
   font-family: var(--font-main);
   font-size: var(--font-size-p);
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.burger {
+  background-image: url(../../../public/images/misc/burger.svg);
+  background-size: cover;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 6vw;
+  height: 6vw;
+  padding: 0;
+  display: none;
+  transition: background 0.15s linear;
+}
+
+.burgerOpen {
+  background-image: url(../../../public/images/misc/close-icon.svg);
 }
 
 .list {
@@ -38,10 +64,12 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  display: flex;
 }
 
 .listElement {
-  
+  display: flex;
+  justify-content: center;
 }
 
 .link {
@@ -52,4 +80,51 @@
 
 .link:hover {
   color: blue;
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .header {
+    height: 11vw;
+  }
+  .content {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .name {
+    font-size: 3vw;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .list {
+    position: absolute;
+    flex-direction: column;
+    align-self: flex-end;
+    top: 100%;
+    background-color: rgba(24, 23, 23, 0.8);
+    width: 30vw;
+    right: -100%;
+    padding-right: 100%;
+    height: 0;
+    transition: all 0.3s linear;
+    overflow: hidden;
+    justify-content: space-evenly;
+  }
+
+  .listOpen {
+    height: 50vw;
+  }
+
+  .listElement {
+    justify-content: flex-end;
+  }
+
+  .nav {
+    justify-self: end;
+  }
 }
