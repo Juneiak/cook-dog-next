@@ -1,0 +1,65 @@
+.form {
+  background-image: url(../../public/images/form-frame/frame.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 48.6vw;
+  height: 43.74vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  position: relative;
+  transition: background-image 0.35s linear;
+}
+
+.content {
+  transform: scale(2);
+}
+
+@media screen and (max-width: 1850px) {
+  .content {
+    transform: scale(1.8);
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .content {
+    transform: scale(1.6);
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .content {
+    transform: scale(1.4);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .content {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .content {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .content {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    transform: scale(0.6);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .content {
+    transform: scale(0.4);
+  }
+}
