@@ -11,6 +11,7 @@ export default function Header() {
         <div className={styles.logo}>
           <Link href='/'>
             <a className={styles.logoLink}>
+              <img className={styles.logoImage} alt='логотип' src='/images/misc/logo.png'></img>
               <span className={styles.name}>COOKDOG</span>
             </a>
           </Link>

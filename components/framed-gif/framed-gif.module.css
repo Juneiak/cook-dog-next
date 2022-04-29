@@ -80,6 +80,36 @@
   height: 145%;
 }
 
+.iconPosition6 {
+  width: 130%;
+  height: 130%;
+}
+
+.gifPosition6 {
+  width: 130%;
+  height: 130%;
+}
+
+.iconPosition7 {
+  width: 145%;
+  height: 145%;
+}
+
+.gifPosition7 {
+  width: 145%;
+  height: 145%;
+}
+
+.iconPosition8 {
+  width: 130%;
+  height: 130%;
+}
+
+.gifPosition8 {
+  width: 130%;
+  height: 130%;
+}
+
 
 @media screen and (max-width: 480px) {
   .framedGif {
