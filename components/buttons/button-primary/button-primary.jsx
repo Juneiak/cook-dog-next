@@ -1,7 +1,8 @@
 import styles from './button-primary.module.css';
 
-
 export default function ButtonPrimary({
+  isValid=true,
+  buttoRef,
   text,
   clickHandler,
   name,
@@ -15,11 +16,13 @@ export default function ButtonPrimary({
 
   return (
     <button
+      ref={buttoRef}
       onClick={clickHandler}
       name={name}
       type='button'
-      className={styles.button}
+      className={`${styles.button} ${ isValid ? '' :styles.buttonDisabled}`}
       style={customStyle}
+      disabled={!isValid}
     >
       <img src={`/images/ui/buttons/${size}-${color}.png`} className={styles.image} alt="иконка кнопки"  />
       <span className={styles.text}>{text}</span>

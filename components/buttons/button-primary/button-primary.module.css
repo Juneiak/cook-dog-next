@@ -6,11 +6,15 @@
   font-size: 2vw;
   font-family: var(--font-header);
   border: none;
-  transition: 0.2s linear transform;
+  transition: 0.2s linear all;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.buttonDisabled {
+  opacity: 0.5;
 }
 
 .button:hover {
