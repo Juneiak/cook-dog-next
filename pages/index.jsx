@@ -1,4 +1,4 @@
-import styles from '../styles/page-styles/index.module.css';
+import styles from '../styles/page-styles/home.module.css';
 
 import MainLayout from '../components/main-layout/main-layout';
 import { FormPopUp, VideoPopUp } from '../components/pop-ups';
@@ -13,9 +13,9 @@ import {
   WhatWeDo,
   Advantages,
   FormSection,
-} from '../components/sections/index.js';
+} from '../components/sections/home-page';
 
-export default function Home() {
+export default function HomePage() {
   const [ formPopUpState, setFormPopUpState ] = useState(false);
   const [ videoPopUpState, setVideoPopUpState ] = useState(false);
   const [ popUpVideoUrl, setPopUpVideoUrl ] = useState('');

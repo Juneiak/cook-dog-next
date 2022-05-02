@@ -1,0 +1,30 @@
+.content {
+  background-image: url(../../public/images/backgrounds/academy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 367vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10.677vw 0 9vw;
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    /* background-image: url(../../public/images/backgrounds/index480.jpg); */
+  }
+  
+  .main {
+    width: 90%;
+  }
+}

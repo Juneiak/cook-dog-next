@@ -1,0 +1,65 @@
+.arrows {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  gap: 2vw;
+  align-items: center;
+}
+
+.arrow {
+  transition: transform 0.2s linear;
+  background-color: rgba(0, 0, 0, 0);
+  width: 4vw;
+  height: 4vw;
+  border: none;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.arrowNext {
+  background-image: url(../../../../public/images/misc/arrow-icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(-45deg);
+  width: 100%;
+  height: 100%;
+}
+
+.arrowPrev {
+  background-image: url(../../../../public/images/misc/arrow-icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(135deg);
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  padding: 2vw 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+
+  .arrows {
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .arrowNext {
+    display: none;
+  }
+  
+  .arrowPrev {
+    display: none;
+  }
+  .card {
+  padding: 3vw 0;
+
+  }
+}

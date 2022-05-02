@@ -1,0 +1,110 @@
+.card {
+  width: 31.73vw;
+  height: 46.2vw;
+  background-image: url(../../../../../public/images/advantages-card/card.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: var(--color-white);
+  font-size: var(--font-size-p);
+  font-family: var(--font-main);
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.1fr 2fr 1fr;
+  position: relative;
+  transition: background-image 0.35s linear;
+
+}
+
+.card:hover {
+  background-image: url(../../../../../public/images/advantages-card/card-light.png);
+}
+
+.shadow:hover {
+  opacity: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: max-content;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  font-size: 2.3em;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 0px 90px 40px rgba(0, 0, 0, 0.53);
+  line-height: 0.01px;
+}
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  width: 30%;
+  height: 50%;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 75%;
+}
+
+.listElement {
+  font-size: 1em;
+  margin-bottom: 4%;
+}
+
+
+.price {
+  height: 27%;
+  width: 47%;
+  background-color: #ff9bab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1300px) {
+  .shadow {
+    box-shadow: 0px 0px 100px 20px rgba(96, 210, 242, 0.4) inset;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .shadow {
+    box-shadow: 0px 0px 100px 5px rgba(96, 210, 242, 0.4) inset;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 90vw;
+    height: 131.04vw;
+    font-size: 3.2vw;
+  }
+
+  .name {
+    box-shadow: 0px 0px 60px 25px rgba(0, 0, 0, 0.53);
+  }
+
+  .list {
+    width: 65%;
+  }
+
+  .listElement {
+    margin-bottom: 6%;
+  }
+
+  .shadow {
+    box-shadow: 0px 0px 100px 20px rgba(96, 210, 242, 0.4) inset;
+  }
+}

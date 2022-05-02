@@ -1,0 +1,83 @@
+.card {
+  width: 17.97vw;
+  height: 27.24vw;
+  position: relative;
+  font-size: 1.2vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1.09fr;
+  justify-items: center;
+  align-items: end;
+}
+
+.image {
+  background-image: url(../../../../../public/images/team-card/team-card.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.avatar {
+  position: relative;
+  z-index: 1;
+  width: 51.3%;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  align-self: start;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.name {
+  font-family: var(--font-header);
+  font-size: 1em;
+  margin: -3% 0 25% 0;
+}
+
+.about {
+  width: 75%;
+  font-family: var(--font-main);
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.power {
+  margin-bottom: 3%;
+}
+
+.power::before {
+  content: 'СИЛА: ';
+  font-weight: 600;
+}
+
+.bonus {
+}
+
+.bonus::before {
+  content: 'БОНУС: ';
+  font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 40vw;
+    height: 60.64vw;
+    font-size: 2.4vw;
+  }
+
+  .name {
+    font-family: var(--font-header);
+    font-size: 1em;
+    margin: -3% 0 30% 0;
+  }
+}

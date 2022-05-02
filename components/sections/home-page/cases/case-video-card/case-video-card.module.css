@@ -1,0 +1,82 @@
+.card {
+  width: 23.7vw;
+  height: 13.746vw;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: var(--font-size-p);
+  transition: transform 0.2s linear;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.frame {
+  background-image: url(../../../../../public/images/misc/company-logo-frame.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  
+}
+
+.about {
+  position: relative;
+  z-index: 1000;
+  color: var(--color-white);
+  font-family: var(--font-main);
+  font-size: 1em;
+  background-color: #024e67;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover .about {
+  opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 60vw;
+    height: 34.8vw;
+  }
+}
