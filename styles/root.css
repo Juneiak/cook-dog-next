@@ -23,6 +23,7 @@ body::after {
   --color-dark-turquoise: #003333;
   --color-pink: #cc0066;
   --color-faded-pink: #ff9999;
+  --color-error: #f25830;
   --font-header: 'PressStart2P';
   --font-main: 'RobotoMono';
   --font-size-h1: 4.938vw;;

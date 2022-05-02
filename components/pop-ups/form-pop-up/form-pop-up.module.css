@@ -1,75 +1,16 @@
 .formPopUp {
-  width: 560px;
+  width: 43vw;
+  height: 46vw;
   background-color: var(--color-white);
-  padding: 40px 45px;
+  padding: 3.1vw 3.5vw;
   box-sizing: border-box;
   font-family: var(--font-header);
-  font-size: 26px;
 }
-
-.form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.title {
-  font-size: 1em;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.inputsContainer {
-  width: 100%;
-  border: none;
-  font-size: 0.7em;
-  padding: 0;
-  margin: 0;
-}
-
-.inputTag {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.input {
-  margin-top: 10px;
-  height: 60px;
-  padding: 5px 20px;
-  outline: none;
-  box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  transition: 0.2s linear transform;
-}
-
-.button {
-  font-size: 0.7em;
-  height: 70px;
-}
-
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 480px) {
   .formPopUp {
-    width: 100%;
+    width: 100vw;
+    height: 90vw;
     padding: 4.5% 5%;
     font-size: 4.5vw;
-  }
-
-  .title {
-    margin-bottom: 9%;
-  }
-
-  .input {
-    height: 10vw;
-    margin-top: 3%;
-    padding: 1% 5%;
-  }
-
-  .inputtTag {
-    margin-bottom: 5%;
-  }
-
-  .button {
-    height: 11vw;
   }
 }
