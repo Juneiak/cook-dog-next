@@ -40,7 +40,7 @@ export default function HomePage() {
   
   return (
     <MainLayout>
-      <div className={styles.content}>
+      <div className={styles.pageContent}>
 
         <main className={styles.main}>
 

@@ -23,14 +23,19 @@ body::after {
   --color-dark-turquoise: #003333;
   --color-pink: #cc0066;
   --color-faded-pink: #ff9999;
+  --color-ocean-blue: #046CB0;
   --color-error: #f25830;
+
   --font-header: 'PressStart2P';
   --font-main: 'RobotoMono';
+  
   --font-size-h1: 4.938vw;;
   --font-size-h2: 2.2vw;
   --font-size-h3: 1.4vw;
   --font-size-p: 1.2vw;
-  --font-size-p2: 1.2vw
+  --font-size-p2: 1.2vw;
+
+  --font-size-v2-h1: 3vw;
 }
 
 body {

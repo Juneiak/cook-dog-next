@@ -1,0 +1,41 @@
+.callToAction {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  width: 73%;
+}
+
+.listElement {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  margin-bottom: 4vw;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: var(--font-size-h2);
+  font-family: var(--font-header);
+  margin-bottom: 1vw;
+}
+
+.subtitle {
+  font-family: var(--font-main);
+  font-size: var(--font-size-p);
+
+}

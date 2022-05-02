@@ -74,10 +74,51 @@ const casesData = [
     youtubeUrl: "https://www.youtube.com/embed/QH2-TGUlwu4?autoplay=1&iv_load_policy=3",
     position: 3,
   },
+]
+
+const academyMenuData = [
+  {
+    name: 'SMM',
+    url: '/smm',
+  },
+  {
+    name: 'Маркетинг',
+    url: '/marketing',
+  },
+  {
+    name: 'Дизайн',
+    url: '/design',
+  },
+  {
+    name: 'Бизнес',
+    url: '/bisness',
+  },
+  {
+    name: 'Видео',
+    url: '/video',
+  },
+  {
+    name: 'Копирайтинг',
+    url: '/copywriting',
+  },
+  {
+    name: 'Финансы',
+    url: '/finance',
+  },
+  {
+    name: 'Хобби',
+    url: '/hobby',
+  },
+  {
+    name: 'Стиль',
+    url: '/style',
+  },
+  
   
 ]
 
 export {
   teamData,
   casesData,
+  academyMenuData,
 }

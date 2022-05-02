@@ -1,4 +1,4 @@
-.content {
+.pageContent {
   background-image: url(../../public/images/backgrounds/index.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +20,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .content {
+  .pageContent {
     background-image: url(../../public/images/backgrounds/index480.jpg);
   }
   
