@@ -1,8 +1,11 @@
 import styles from './call-to-action.module.css';
 import CallToActionCard from './call-to-action-card/call-to-action-card';
-import image1 from '../../../../public/images/call-to-action-images/1.png';
-import image2 from '../../../../public/images/call-to-action-images/2.png';
-import image3 from '../../../../public/images/call-to-action-images/3.png';
+import {
+  callToActionImage1,
+  callToActionImage2,
+  callToActionImage3,
+} from '../../../../public/images/academy-page/index';
+
 
 export default function CallToAction() {
   return (
@@ -17,7 +20,7 @@ export default function CallToAction() {
         <ul className={styles.list}>
           <li className={styles.listElement}>
             <CallToActionCard 
-              image={image1}
+              image={callToActionImage1}
               reverse={false}
               title='Решайся на изменения'
               text='У тебя есть что показать миру и людям? Прекрасно! Поставь перед собой цель, а мы дадим тебе знания и навыки. Для этого у нас есть все, что нужно: опыт, инструменты, экспертность!'
@@ -26,7 +29,7 @@ export default function CallToAction() {
 
           <li className={styles.listElement}>
             <CallToActionCard 
-              image={image2}
+              image={callToActionImage2}
               reverse={true}
               title='Решайся на изменения'
               text='У тебя есть что показать миру и людям? Прекрасно! Поставь перед собой цель, а мы дадим тебе знания и навыки. Для этого у нас есть все, что нужно: опыт, инструменты, экспертность!'
@@ -35,7 +38,7 @@ export default function CallToAction() {
 
           <li className={styles.listElement}>
             <CallToActionCard 
-              image={image3}
+              image={callToActionImage3}
               reverse={false}
               title='Решайся на изменения'
               text='У тебя есть что показать миру и людям? Прекрасно! Поставь перед собой цель, а мы дадим тебе знания и навыки. Для этого у нас есть все, что нужно: опыт, инструменты, экспертность!'

@@ -3,6 +3,8 @@ import MainLayout from '../components/main-layout/main-layout';
 import {
   DigitalFuture,
   CallToAction,
+  WeWillSupport,
+
 } from '../components/sections/academy-page';
 
 export default function AcademyPage() {
@@ -13,6 +15,7 @@ export default function AcademyPage() {
         <main className={styles.main}>
           <DigitalFuture />
           <CallToAction />
+          <WeWillSupport />
         </main>
       </div>
     </MainLayout>

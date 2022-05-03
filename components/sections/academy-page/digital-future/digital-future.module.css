@@ -24,11 +24,11 @@
 .title {
   font-family: var(--font-main);
   margin-bottom: 1vw;
-  font-size: 3.7vw;
+  font-size: var(--font-size-v2-h1);
 }
 
 .subtitle {
   font-family: var(--font-header);
-  font-size: 3.7vw;
+  font-size: var(--font-size-v2-h1);
 
 }
