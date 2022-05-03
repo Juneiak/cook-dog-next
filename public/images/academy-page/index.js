@@ -7,8 +7,8 @@ import knowledgeImage2 from './knowledge/2.png';
 import knowledgeImage3 from './knowledge/3.png';
 
 
-import simpleStartImage1 from './simple-start/1.png';
-import simpleStartImage2 from './simple-start/2.png';
+import easyStartImage1 from './easy-start/1.png';
+import easyStartImage2 from './easy-start/2.png';
 
 
 export {
@@ -18,6 +18,6 @@ export {
   knowledgeImage1,
   knowledgeImage2,
   knowledgeImage3,
-  simpleStartImage1,
-  simpleStartImage2,
+  easyStartImage1,
+  easyStartImage2,
 }

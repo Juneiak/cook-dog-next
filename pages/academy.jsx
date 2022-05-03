@@ -4,7 +4,8 @@ import {
   DigitalFuture,
   CallToAction,
   WeWillSupport,
-
+  Knowledge,
+  EasyStart,
 } from '../components/sections/academy-page';
 
 export default function AcademyPage() {
@@ -16,6 +17,8 @@ export default function AcademyPage() {
           <DigitalFuture />
           <CallToAction />
           <WeWillSupport />
+          <Knowledge />
+          <EasyStart />
         </main>
       </div>
     </MainLayout>

@@ -1,0 +1,11 @@
+.card {
+  display: grid;
+  gap: 3vw;
+  justify-items: center;
+  width: 25vw;
+}
+
+.image {
+  min-width: 15vw;
+  min-height: 15vw;
+}

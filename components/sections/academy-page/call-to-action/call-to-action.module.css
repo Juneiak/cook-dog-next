@@ -30,7 +30,7 @@
 }
 
 .title {
-  font-size: var(--font-size-h2);
+  font-size: var(--font-size-v2-h2);
   font-family: var(--font-header);
   margin-bottom: 1vw;
 }

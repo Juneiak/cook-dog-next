@@ -36,6 +36,9 @@ body::after {
   --font-size-p2: 1.2vw;
 
   --font-size-v2-h1: 3.7vw;
+  --font-size-v2-h2: 1.8vw;
+  --font-size-v2-h3: 1.7vw;
+
 }
 
 body {

@@ -1,0 +1,30 @@
+.knowledge {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10.5vw;
+}
+
+.content {
+  width: 85%;
+}
+
+.title {
+  color: var(--color-white);
+  font-family: var(--font-header);
+  font-size: var(--font-size-v2-h2);
+  margin-bottom: 3vw;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listElement {
+  
+}

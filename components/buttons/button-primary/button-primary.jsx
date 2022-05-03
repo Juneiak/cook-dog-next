@@ -1,14 +1,15 @@
 import styles from './button-primary.module.css';
 
 export default function ButtonPrimary({
-  isValid=true,
+  isValid = true,
   buttoRef,
   text,
   clickHandler,
   name,
-  cover=false,
-  size='big',
-  color=1
+  cover = false,
+  size = 'big',
+  color = 1,
+  ownFontSize = '',
   }) {
   // size = 'small' / 'middle' / 'big'
   // color = 1-pink / 2-fadePink / 3-blue
@@ -25,7 +26,7 @@ export default function ButtonPrimary({
       disabled={!isValid}
     >
       <img src={`/images/ui/buttons/${size}-${color}.png`} className={styles.image} alt="иконка кнопки"  />
-      <span className={styles.text}>{text}</span>
+      <span style={{fontSize: ownFontSize}} className={`${styles.text} ${styles[size + 'Text']}`}>{text}</span>
     </button>
     
   )

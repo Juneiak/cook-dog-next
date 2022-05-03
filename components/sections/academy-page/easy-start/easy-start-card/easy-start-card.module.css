@@ -1,0 +1,17 @@
+.card {
+  display: grid;
+  gap: 2vw;
+  justify-items: center;
+}
+
+.image {
+  width: 15vw;
+  height: 15vw;
+}
+
+.title {
+  color: var(--color-white);
+  font-family: var(--font-main);
+  font-size: var(--font-size-v2-h3);
+  text-align: center;
+}

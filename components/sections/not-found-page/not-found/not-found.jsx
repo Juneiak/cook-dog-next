@@ -21,7 +21,7 @@ export default function NotFound() {
             text='ГАВ-ГАВ'
             name='go-back'
             color={2}
-            size='middle'
+            size='big'
           />
         </div>
         
