@@ -19,12 +19,12 @@ export default function Header() {
         <nav className={styles.nav}>
           <button onClick={() => setBurgerIsOpen(!burgerIsOpen)} className={`${styles.burger} ${burgerIsOpen ? styles.burgerOpen : ''}`}></button>
           <ul className={`${styles.list} ${burgerIsOpen ? styles.listOpen : ''}`}>
-            <li className={styles.listElement}><a href="/prices" className={styles.link}>Цены</a></li>
-            <li className={styles.listElement}><a href="/services" className={styles.link}>Услуги</a></li>
-            <li className={styles.listElement}><a href="/cases" className={styles.link}>Кейсы</a></li>
-            <li className={styles.listElement}><a href="/academy" className={styles.link}>Академия</a></li>
-            <li className={styles.listElement}><a href="/career" className={styles.link}>Вакансии</a></li>
-            <li className={styles.listElement}><a href="/contacts" className={styles.link}>Контакты</a></li>
+            <li className={styles.listElement}><Link href="/prices"><a className={styles.link}>Цены</a></Link></li>
+            <li className={styles.listElement}><Link href="/services"><a className={styles.link}>Услуги</a></Link></li>
+            <li className={styles.listElement}><Link href="/cases"><a className={styles.link}>Кейсы</a></Link></li>
+            <li className={styles.listElement}><Link href="/academy"><a className={styles.link}>Академия</a></Link></li>
+            <li className={styles.listElement}><Link href="/career"><a className={styles.link}>Вакансии</a></Link></li>
+            <li className={styles.listElement}><Link href="/contacts"><a className={styles.link}>Контакты</a></Link></li>
           </ul>
         </nav>
       </div>

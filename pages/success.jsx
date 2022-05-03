@@ -1,5 +1,5 @@
 import MainLayout from "../components/main-layout/main-layout";
-import Success from "../components/success/success";
+import Success from "../components/sections/success/success";
 
 export default function SuccessPage() {
 

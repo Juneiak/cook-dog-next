@@ -1,6 +1,6 @@
 import styles from './success.module.css';
 import { useRouter } from 'next/router';
-import ButtonPrimary from '../buttons/button-primary/button-primary';
+import ButtonPrimary from '../../buttons/button-primary/button-primary';
 
 export default function Success() {
   const router = useRouter()
