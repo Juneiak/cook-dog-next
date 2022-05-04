@@ -24,16 +24,12 @@ export default function HomePage() {
     setFormPopUpState(!formPopUpState);
   }
 
-  const handleToggleVideoPopup = () => {
-    setVideoPopUpState(!videoPopUpState);
-  }
-
   const handleOpenVideoPopUp = (videoUrl) => {
     setVideoPopUpState(true);
     setPopUpVideoUrl(videoUrl)
   }
 
-  const handleCloseVideoPopUp = (videoUrl) => {
+  const handleCloseVideoPopUp = () => {
     setVideoPopUpState(false);
     setPopUpVideoUrl('')
   }

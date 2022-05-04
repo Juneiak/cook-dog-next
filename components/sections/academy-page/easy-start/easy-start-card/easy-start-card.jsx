@@ -11,7 +11,7 @@ export default function EasyStartCard({image, title, buttonHandler}) {
       <p className={styles.title}>{title}</p>
       <ButtonPrimary 
         size='big'
-        ownFontSize='1.2vw'
+        customFontSize='1.2vw'
         color='2'
         text="Скачать бесплатно"
         clickHandler={buttonHandler} 

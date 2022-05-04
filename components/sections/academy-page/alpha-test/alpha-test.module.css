@@ -1,0 +1,29 @@
+.alphaTest {
+  width: 80%;
+  padding-bottom: 9vw;
+  display: flex;
+  justify-content: start;
+}
+
+.content {
+  width: 50%;
+  color: var(--color-white);
+  font-family: var(--font-main);
+}
+
+.title {
+  font-size: var(--font-size-v2-h1);
+  font-family: var(--font-header);
+  margin-bottom: 1vw;
+}
+
+.subtitle {
+  font-size: var(--font-size-p);
+  margin-bottom: 3vw;
+  line-height: 1.5;
+  width: 80%;
+}
+
+.button {
+  width: 30%;
+}

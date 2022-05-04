@@ -9,7 +9,7 @@ export default function ButtonPrimary({
   cover = false,
   size = 'big',
   color = 1,
-  ownFontSize = '',
+  customFontSize = '',
   }) {
   // size = 'small' / 'middle' / 'big'
   // color = 1-pink / 2-fadePink / 3-blue
@@ -26,7 +26,7 @@ export default function ButtonPrimary({
       disabled={!isValid}
     >
       <img src={`/images/ui/buttons/${size}-${color}.png`} className={styles.image} alt="иконка кнопки"  />
-      <span style={{fontSize: ownFontSize}} className={`${styles.text} ${styles[size + 'Text']}`}>{text}</span>
+      <span style={{fontSize: customFontSize}} className={`${styles.text} ${styles[size + 'Text']}`}>{text}</span>
     </button>
     
   )

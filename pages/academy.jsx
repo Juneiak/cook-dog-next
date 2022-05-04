@@ -6,6 +6,9 @@ import {
   WeWillSupport,
   Knowledge,
   EasyStart,
+  NextStart,
+  AlphaTest,
+  ChooseYourFuture,
 } from '../components/sections/academy-page';
 
 export default function AcademyPage() {
@@ -19,6 +22,9 @@ export default function AcademyPage() {
           <WeWillSupport />
           <Knowledge />
           <EasyStart />
+          <NextStart />
+          <AlphaTest />
+          <ChooseYourFuture />
         </main>
       </div>
     </MainLayout>

@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 367vw;
+  height: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 12.5vw 0 9vw;
+  padding: 12vw 0 30vw;
 }
 
 @media screen and (max-width: 480px) {

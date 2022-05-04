@@ -10,14 +10,19 @@ import knowledgeImage3 from './knowledge/3.png';
 import easyStartImage1 from './easy-start/1.png';
 import easyStartImage2 from './easy-start/2.png';
 
+import nextStartImage from './next-start/1.png';
 
 export {
   callToActionImage1,
   callToActionImage2,
   callToActionImage3,
+
   knowledgeImage1,
   knowledgeImage2,
   knowledgeImage3,
+
   easyStartImage1,
   easyStartImage2,
+
+  nextStartImage,
 }

@@ -1,0 +1,52 @@
+.nextStart {
+  padding-bottom: 10.5vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--color-white);
+  font-family: var(--font-main);
+}
+
+.content {
+  width: 75%;
+  display: grid;
+  gap: 10vw;
+  grid-template-columns: 1.7fr 3fr;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  gap: 2vw;
+  justify-items: center;
+
+}
+
+.image {
+  width: 15vw;
+  height: 15vw;
+}
+
+.cardText {
+  text-align: center;
+  font-size: var(--font-size-v2-h3);
+}
+
+.about {
+
+}
+
+.title {
+  font-size: var(--font-size-v2-h1);
+  margin-bottom: 1vw;
+
+}
+
+.subtitle {
+  font-size: var(--font-size-p);
+  margin-bottom: 2vw;
+}
+
+.button {
+  width: 40%;
+}
