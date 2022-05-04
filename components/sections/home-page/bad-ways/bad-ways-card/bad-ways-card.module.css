@@ -2,9 +2,9 @@
   background-image: url(../../../../../public/images/bad-ways-card/card.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 33vw;
+  width: 31vw;
   font-size: 1.3vw;
-  height: 54.3vw;
+  height: 51vw;
   position: relative;
   transition: background-image 0.35s linear;
   background-color: rgba(0, 0, 0, 0);

@@ -62,9 +62,6 @@ h1, h2, h3, p {
   }
 }
 
-
-
-
 @keyframes card-flipping {
   0% {
       transform: rotate3d(0, 1, 0, 0deg);
@@ -87,7 +84,6 @@ h1, h2, h3, p {
     color: gold
   }
 }
-
 
 .elementIsActive {
   transform: scale(1.2);
