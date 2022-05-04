@@ -2,13 +2,12 @@
   background-image: url(../../../../../public/images/bad-ways-card/card.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 34.75vw;
+  width: 33.5vw;
   font-size: 1.3vw;
-  height: 57.4vw;
+  height: 55.3vw;
   position: relative;
   transition: background-image 0.35s linear;
   background-color: rgba(0, 0, 0, 0);
-  margin: -1.4vw;
 }
 
 .badWaysCard:hover {

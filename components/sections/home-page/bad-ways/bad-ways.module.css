@@ -33,12 +33,12 @@
   margin: 0 0 4.95vw 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
 
 .listElement {
-
+  margin: 0 -0.5vw;
 }
 
 .button {
