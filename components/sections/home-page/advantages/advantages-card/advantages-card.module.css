@@ -20,10 +20,6 @@
   background-image: url(../../../../../public/images/advantages-card/card-light.png);
 }
 
-.shadow:hover {
-  opacity: 1;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -63,7 +59,7 @@
 }
 
 
-.price {
+.priceButton {
   height: 27%;
   width: 47%;
   background-color: #ff9bab;
@@ -71,19 +67,16 @@
   align-items: center;
   justify-content: center;
   font-weight: 600;
+  border: none;
+  color: var(--color-white);
+  transition: transform 0.2s linear;
 }
 
-@media screen and (max-width: 1300px) {
-  .shadow {
-    box-shadow: 0px 0px 100px 20px rgba(96, 210, 242, 0.4) inset;
-  }
+.priceButton:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
-@media screen and (max-width: 850px) {
-  .shadow {
-    box-shadow: 0px 0px 100px 5px rgba(96, 210, 242, 0.4) inset;
-  }
-}
 
 @media screen and (max-width: 480px) {
   .card {
@@ -102,9 +95,5 @@
 
   .listElement {
     margin-bottom: 6%;
-  }
-
-  .shadow {
-    box-shadow: 0px 0px 100px 20px rgba(96, 210, 242, 0.4) inset;
   }
 }

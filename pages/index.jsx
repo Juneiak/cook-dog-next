@@ -52,7 +52,7 @@ export default function HomePage() {
 
           <Cases openVideoPopUpHandler={handleOpenVideoPopUp} />
 
-          <Advantages />
+          <Advantages onPopUpButtonClick={handleToggleFormPopup}  />
 
           <FormSection onPopUpButtonClick={handleToggleFormPopup}  />
 

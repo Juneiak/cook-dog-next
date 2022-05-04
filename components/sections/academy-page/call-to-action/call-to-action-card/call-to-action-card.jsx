@@ -6,7 +6,7 @@ export default function CallToActionCard({ image, reverse, title, text }) {
   return (
     <article className={`${styles.card} ${reverse ? styles.cardReverse : ''}`}>
       <div className={styles.image}>
-        <Image src={image} alt='мотивирующая картинка' />
+        <Image src={image} sizes='fill' alt='мотивирующая картинка' />
       </div>
       <div className={styles.text}>
         <CardAbout

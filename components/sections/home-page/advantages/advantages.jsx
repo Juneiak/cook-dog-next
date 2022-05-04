@@ -4,7 +4,7 @@ import cardStyles from './advantages-card/advantages-card.module.css';
 import AdvantagesCard from './advantages-card/advantages-card'
 import SectionTitle from '../../../section-title/section-title'
 
-export default function Advantages() {
+export default function Advantages({ onPopUpButtonClick }) {
   return (
     <section id='advantages' className={styles.advantages}>
       <div className={styles.about}>
@@ -12,7 +12,7 @@ export default function Advantages() {
       </div>
       <ul className={styles.list}>
         <li className={styles.listElement}>
-          <AdvantagesCard price='ОТ 300.000 РУБ' name='LAUNCH' position={12}>
+          <AdvantagesCard clickHandler={onPopUpButtonClick} price='ОТ 300.000 РУБ' name='LAUNCH' position={12}>
             <ul className={cardStyles.list}>
               <li className={cardStyles.listElement}>– Разработка глобальной стратегии бренда;</li>
               <li className={cardStyles.listElement}>– Создание уникального фирменного стиля;</li>
@@ -25,7 +25,7 @@ export default function Advantages() {
         </li>
 
         <li className={styles.listElement}>
-          <AdvantagesCard price='ОТ 50.000 РУБ' name='ПОДДЕРЖКА' position={13}>
+          <AdvantagesCard clickHandler={onPopUpButtonClick} price='ОТ 50.000 РУБ' name='ПОДДЕРЖКА' position={13}>
             <ul className={cardStyles.list}>
               <li className={cardStyles.listElement}>– Поддержание или запуск конкретного направления (Tik-Tok, Instagram и т.д.);</li>
               <li className={cardStyles.listElement}>– Разработка стратегии продвижения;</li>
@@ -38,7 +38,7 @@ export default function Advantages() {
         </li>
 
         <li className={styles.listElement}>
-          <AdvantagesCard price='ОТ 70.000 РУБ' name='БРЕНДИНГ' position={14}>
+          <AdvantagesCard clickHandler={onPopUpButtonClick}  price='ОТ 70.000 РУБ' name='БРЕНДИНГ' position={14}>
             <ul className={cardStyles.list}>
               <li className={cardStyles.listElement}>– Определение глобальной миссии компании;</li>
               <li className={cardStyles.listElement}>– Создание уникального фирменного стиля;</li>
