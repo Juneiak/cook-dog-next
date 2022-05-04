@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   width: 31vw;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   height: 51vw;
   position: relative;
   transition: background-image 0.35s linear;
@@ -18,9 +18,9 @@
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, max-content) 1fr;
+  grid-template-rows: 1.2fr 1.8fr 3fr 2fr;
 
-  align-items: center;
+  align-items: start;
   color: var(--color-white);
   font-family: var(--font-main);
   height: 100%;
@@ -30,14 +30,16 @@
   font-size: 1em;
   line-height: 1.2;
   font-weight: 600;
-  width: 65%;
+  width: 70%;
   text-align: center;
-  margin: 14% 0 4.5% 0;
+  /* margin: 10% 0 0 0; */
+  align-self: end;
 }
 
 .icon {
   width: 28%;
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
+  align-self: center;
 }
 
 .consList {
@@ -47,7 +49,7 @@
 }
 
 .con {
-  margin-bottom: 6.5%;
+  margin-bottom: 5.5%;
 }
 
 .con:last-child {
@@ -85,10 +87,10 @@
 
 .total {
   text-align: center;
-  height: 30%;
-  width: 62%;
+  width: 70%;
   font-size: 0.9em;
   font-weight: 600;
+  margin-top: 7%;
 }
 
 @media screen and (max-width: 1300px) {

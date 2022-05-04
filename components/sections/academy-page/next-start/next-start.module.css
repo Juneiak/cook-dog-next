@@ -19,7 +19,6 @@
   display: grid;
   gap: 2vw;
   justify-items: center;
-
 }
 
 .image {
@@ -39,7 +38,6 @@
 .title {
   font-size: var(--font-size-v2-h1);
   margin-bottom: 1vw;
-
 }
 
 .subtitle {
